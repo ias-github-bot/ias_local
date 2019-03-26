@@ -1,0 +1,20 @@
+<odoo>
+	<data>
+	    <record id="hr_overtime_structure_extra_hours" model="hr.overtime.structure">
+	        <field name="name">Extra hours</field>
+			<field name="overtime_method">ov_attendance</field>
+			<field name="code">extra_hours</field>
+	        <field name="hr_ov_structure_rule_ids"
+
+	            eval="[
+
+	                (0, 0, {'type_id': '1', 'type_detail_id': '1' ,'max_per_day': '2', 'rate': '25', 'begin_after': '6', 'ends_in': '21.99'}),
+	                (0, 0, {'type_id': '3', 'type_detail_id': '6' ,'max_per_day': '8', 'rate': '35', 'begin_after': '22', 'ends_in': '5.99'}),
+	                (0, 0, {'type_id': '2', 'type_detail_id': '8' ,'max_per_day': '2', 'rate': '75', 'begin_after': '6', 'ends_in': '21.99'}),
+	                (0, 0, {'type_id': '2', 'type_detail_id': '9' ,'max_per_day': '2', 'rate': '75', 'begin_after': '22', 'ends_in': '5.99'}),
+	            ]"
+	        />
+
+	    </record>
+	</data>
+</odoo>

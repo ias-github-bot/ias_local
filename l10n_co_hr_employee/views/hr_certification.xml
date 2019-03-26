@@ -1,0 +1,70 @@
+<odoo>
+  <data>
+    <!-- certification tree -->
+    <record model="ir.ui.view" id="view_certification_tree">
+        <field name="name">hr.certification.tree</field>
+        <field name="model">hr.certification</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="certifications">
+                <field name="name" string="Certification"/>
+                <field name="employee_id"/>
+                <field name="certification" string="# Certificate"/>
+                <field name="partner_id" string="Issued By"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- certification tree -->
+    <record model="ir.ui.view" id="view_certification_form">
+        <field name="name">hr.certification.form</field>
+        <field name="model">hr.certification</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="certification">
+                <sheet>
+                    <group>
+                        <group string="Basic Information">
+                            <field name="employee_id"/>
+                            <field name="name" string="Certification"/>
+                            <field name="state"/>
+                        </group>
+                        <group string="Dates">
+                            <field name="start_date"/>
+                            <field name="expire"/>
+                            <field name="end_date" attrs="{'invisible':[('expire', '=', False)]}"/>
+                        </group>
+                        <group string="Partner information">
+                            <field name="partner_id" string="Issued By"/>
+                            <field name="location"/>
+                        </group>
+                        <group string="Certification information">
+                            <field name="certification"/>
+                        </group>
+                    </group>
+                    <separator string="Description"/>
+                    <field name="description" nolabel="1"/>
+                </sheet>
+                 <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                 </div>
+            </form>
+        </field>
+    </record>
+    <!-- Menu -->
+    <record model="ir.actions.act_window" id="open_view_certification_form">
+        <field name="name">Certifications</field>
+        <field name="res_model">hr.certification</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem name="Certifications"
+              parent="menu_hr_experience"
+              id="menu_open_view_certification_form"
+              action="open_view_certification_form"/>
+
+  </data>
+</odoo>

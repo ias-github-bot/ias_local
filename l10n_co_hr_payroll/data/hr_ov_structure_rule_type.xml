@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- TYPE DATA -->
+        <record id="hr_ov_structure_rule_type1" model="hr.ov.structure.rule.type">
+            <field name="name">Dia laboral</field>
+            <field name="code">WD</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type2" model="hr.ov.structure.rule.type">
+            <field name="name">Fin de semana</field>
+            <field name="code">WE</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type3" model="hr.ov.structure.rule.type">
+            <field name="name">Recargo</field>
+            <field name="code">RCHRG</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type4" model="hr.ov.structure.rule.type">
+            <field name="name">Ausencias oficiales</field>
+            <field name="code">OL</field>
+        </record>
+
+        <!-- TYPE DATA DETAIL-->
+        <record id="hr_ov_structure_rule_type_d1" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Horas extras diurnas</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type1"/>
+            <field name="code">WDEDH</field>
+            <field name="percent">25</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d2" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Horas extras nocturnas</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type1"/>
+            <field name="code">WDENH</field>
+            <field name="percent">75</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d5" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Hora extra dominical diurna</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type2"/>
+            <field name="code">WESFED</field>
+            <field name="percent">75</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d6" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Hora extra dominical nocturna</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type2"/>
+            <field name="code">WESFENT</field>
+            <field name="percent">100</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d7" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Dominical nocturno</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type2"/>
+            <field name="code">WESFNT</field>
+            <field name="percent">100</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d3" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Recargo noctuno</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type3"/>
+            <field name="code">RCHRGNO</field>
+            <field name="percent">75</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d4" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Recargo dominical o festivo</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type3"/>
+            <field name="code">RCHRGSHS</field>
+            <field name="percent">100</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d8" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Hora extra festivo diurno</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type4"/>
+            <field name="code">OLSFET</field>
+            <field name="percent">75</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d9" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Hora extra festivo nocturno</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type4"/>
+            <field name="code">OLSFENT</field>
+            <field name="percent">110</field>
+        </record>
+
+        <record id="hr_ov_structure_rule_type_d10" model="hr.ov.structure.rule.type.detail">
+            <field name="name">Festivo nocturno</field>
+            <field name="overtime_structure_type_id" ref="hr_ov_structure_rule_type4"/>
+            <field name="code">OLSFNT</field>
+            <field name="percent">110</field>
+        </record>
+    </data>
+</odoo>

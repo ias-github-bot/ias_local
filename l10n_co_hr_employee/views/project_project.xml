@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Projects -->
+
+    <record id="project_project_form_inherit_pro" model="ir.ui.view">
+        <field name="name">project.project.form.inherit.pro</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+
+            <field name="partner_id" position="after">
+                <field name="employee_id"/>
+            </field>
+
+        </field>
+    </record>
+
+  </data>
+</odoo>

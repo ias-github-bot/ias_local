@@ -1,0 +1,135 @@
+<openerp>
+  <odoo>
+    <!-- professional tree -->
+    <record model="ir.ui.view" id="view_professional_tree">
+        <field name="name">hr.experience.tree</field>
+        <field name="model">hr.experience</field>
+        <field name="type">tree</field>
+        <field name="arch" type="xml">
+            <tree string="Professional Experiences">
+                <field name="name" string="Position"/>
+                <field name="employee_id"/>
+                <field name="partner_id" string="Employer"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+     <!-- professional form -->
+    <record model="ir.ui.view" id="view_professional_form">
+        <field name="name">hr.experience.form</field>
+        <field name="model">hr.experience</field>
+        <field name="type">form</field>
+        <field name="arch" type="xml">
+            <form string="Professional Experience">
+                <sheet>
+                    <group name="main">
+                        <group string="Basic Information">
+                            <field name="employee_id"/>
+                            <field name="name" string="Position"/>
+                            <field name="end_job"/>
+                            <field name="identification" string="Identification"/>
+                            <field name="phone" string="Phone number"/>
+                        </group>
+                        <group string="Dates">
+                            <field name="start_date"/>
+                            <field name="expire"/>
+                            <field name="end_date" attrs="{'invisible':[('expire', '=', False)]}"/>
+                        </group>
+                        <group string="Wages">
+                            <field name="wage_init"/>
+                            <field name="wage_end"/>
+                        </group>
+                        <group string="Partner information">
+                            <field name="partner_id" string="Employer"/>
+                            <field name="location"/>
+                        </group>
+                        <group string="Add Surveys">
+                            <field name="reason_leaving"/>
+                            <field name="info_performance"/>
+                        </group>
+                        <group string="Description">
+                            <field name="description" nolabel="1"/>
+                        </group>
+                    </group>
+                    <group string="Leaving reason survey" attrs="{'invisible':[('reason_leaving', '=', False)]}">
+                      <group>
+                        <field name="leaving_selection" attrs="{'required':[('reason_leaving', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="leaving_description" attrs="{'required':[('reason_leaving', '=', True)]}"/>
+                      </group>
+                    </group>
+                    <group string="Performance information survey" attrs="{'invisible':[('info_performance', '=', False)]}">
+                      <group>
+                        <field name="job_knowledge" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="interest_in_work" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="performance" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="responsability" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="discipline" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="relationships" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="supervisory_skill" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="teamwork" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="work_under_pressure" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="performance_description" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                    </group>
+                    <group string="General Comments of the company" attrs="{'invisible':[('info_performance', '=', False)]}">
+                      <group>
+                        <field name="concerns_union_act" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="company_hire_again" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="company_description" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="informant" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="informant_position" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                      <group>
+                        <field name="survey_date" attrs="{'required':[('info_performance', '=', True)]}"/>
+                      </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+     <!-- Menu -->
+    <record model="ir.actions.act_window" id="open_view_professional_form">
+        <field name="name">Professional Experiences</field>
+        <field name="res_model">hr.experience</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Professional Experiences"
+              parent="menu_hr_experience"
+              id="menu_open_view_professional_form"
+              action="open_view_professional_form"/>
+
+  </data>
+</odoo>

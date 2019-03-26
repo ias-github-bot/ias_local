@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+      <record id="view_partner_form_eps" model="ir.ui.view">
+          <field name="name">res.partner.form.eps</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+           <field name="context">{'company_type' : 'company'}</field>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="eps" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+              </xpath>
+              <xpath expr="//notebook" position="inside">
+                   <page string="Affiliates" attrs="{'invisible':[('eps','=', False)]}">
+                        <field name="eps_ids" mode="tree" context="{'default_survey_id': active_id}" nolabel="1">
+                            <tree>
+                                <field name="identification_id"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+              </xpath>
+          </field>
+      </record>
+
+      <record id="action_partner_eps_form" model="ir.actions.act_window">
+          <field name="name">Eps</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_type">form</field>
+          <field name="domain">[('eps','=',True),('company_type','=','company')]</field>
+          <field name="view_mode">kanban,tree,form</field>
+          <field name="context">
+            {'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_company_type': 'company', 'default_eps': 1, 'default_is_company': 1}</field>
+          <field name="filter" eval="True"/>
+      </record>
+
+
+       <record id="view_partner_form_compensation_box" model="ir.ui.view">
+          <field name="name">res.partner.form.compensation.box</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="compensation_box" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+              </xpath>
+              <xpath expr="//notebook" position="inside">
+                   <page string="Affiliates" attrs="{'invisible':[('compensation_box','=', False)]}">
+                        <field name="compensation_box_ids" mode="tree" context="{'default_survey_id': active_id}" nolabel="1">
+                            <tree>
+                                <field name="identification_id"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+              </xpath>
+          </field>
+      </record>
+
+      <record id="action_partner_compensation_box_form" model="ir.actions.act_window">
+          <field name="name">Compensation Box</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_type">form</field>
+          <field name="domain">[('compensation_box','=',True),('company_type','=','company')]</field>
+          <field name="view_mode">kanban,tree,form</field>
+          <field name="context">
+            {'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_company_type': 'company', 'default_compensation_box': 1, 'default_is_company': 1}</field>
+          <field name="filter" eval="True"/>
+      </record>
+
+
+      <record id="view_partner_form_pension_severance_fund" model="ir.ui.view">
+          <field name="name">res.partner.form.pension.severance.fund</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="pension_severance_fund" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+              </xpath>
+              <xpath expr="//notebook" position="inside">
+                   <page string="Affiliates" attrs="{'invisible':[('pension_severance_fund','=', False)]}">
+                        <field name="pension_severance_fund_ids" mode="tree" context="{'default_survey_id': active_id}" nolabel="1">
+                            <tree>
+                                <field name="identification_id"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+              </xpath>
+          </field>
+      </record>
+
+      <record id="action_partner_pension_severance_fund_form" model="ir.actions.act_window">
+          <field name="name">Pension Severance Fund</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_type">form</field>
+          <field name="domain">[('pension_severance_fund','=',True),('company_type','=','company')]</field>
+          <field name="view_mode">kanban,tree,form</field>
+          <field name="context">
+            {'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_company_type': 'company', 'default_pension_severance_fund': 1, 'default_is_company': 1}</field>
+          <field name="filter" eval="True"/>
+      </record>
+
+       <record id="view_partner_form_arl" model="ir.ui.view">
+          <field name="name">res.partner.form.arl</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="arl" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+              </xpath>
+              <xpath expr="//notebook" position="inside">
+                   <page string="Affiliates" attrs="{'invisible':[('arl','=', False)]}">
+                        <field name="arl_ids" mode="tree" context="{'default_survey_id': active_id}" nolabel="1">
+                            <tree>
+                                <field name="identification_id"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+              </xpath>
+          </field>
+      </record>
+
+      <record id="action_partner_arl_form" model="ir.actions.act_window">
+          <field name="name">Arl</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_type">form</field>
+          <field name="domain">[('arl','=',True),('company_type','=','company')]</field>
+          <field name="view_mode">kanban,tree,form</field>
+          <field name="context">
+            {'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_company_type': 'company', 'default_arl': 1, 'default_is_company': 1}</field>
+          <field name="filter" eval="True"/>
+      </record>
+
+
+      <record id="view_partner_form_eps" model="ir.ui.view">
+          <field name="name">res.partner.form.hr.inhert</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+           <field name="context">{'company_type' : 'company'}</field>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="medical_exam" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+              </xpath>
+
+          </field>
+      </record>
+
+
+      <!-- menu-->
+
+      <menuitem name="Eps" parent="hr.menu_human_resources_configuration"
+				  id="menu_hr_eps" action="action_partner_eps_form"/>
+
+      <menuitem name="Arl" parent="hr.menu_human_resources_configuration"
+				id="menu_hr_arl" action="action_partner_arl_form"/>
+
+      <menuitem name="Pension severance fund" parent="hr.menu_human_resources_configuration"
+				id="menu_hr_pension_severance_fund" action="action_partner_pension_severance_fund_form"/>
+
+      <menuitem name="Compensation box" parent="hr.menu_human_resources_configuration"
+				id="menu_hr_compensation_box" action="action_partner_compensation_box_form"/>
+
+
+  </data>
+</odoo>

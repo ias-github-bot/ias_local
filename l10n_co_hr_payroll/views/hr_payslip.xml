@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_payslip_view_form_prime_inherit" model="ir.ui.view">
+            <field name="name">hr.payslip.form.prime</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="credit_note" position="after">
+                        <field name="salary_hour"/>
+                        <field name="prime" attrs="{'invisible':[('prime','=',0)]}"/>
+                        <field name="total_order" attrs="{'invisible': [('total_order', '=', 0)]}"/>
+                        <field name="total_loan" attrs="{'invisible': [('total_loan', '=', 0)]}"/>
+                        <field name="total_savefunds" attrs="{'invisible': [('total_savefunds', '=', 0)]}"/>
+                        <field name="total_socialc" attrs="{'invisible': [('total_socialc', '=', 0)]}"/>
+                        <field name="type_application" />
+                    </field>
+
+                    <field name="number_of_hours" position="after">
+                        <field name="rate" />
+                    </field>
+
+                    <field name="worked_days_line_ids" position="before">
+                        <group>
+                            <div class="oe_right oe_button_box">
+                                <button string="Import from Timesheets" name="import_worked_days" type="object" states="draft" />
+                            </div>
+                        </group>
+                    </field>
+
+                    <xpath expr="//notebook" position="inside">
+                        <page string="Loans and Libranzas">
+                            <field name="loan_ids">
+                                <tree string="Libranzas" open="false" create="false" delete="false">
+                                    <field name="loan_id"/>
+                                    <field name="paid_date"/>
+                                    <field name="month_name"/>
+                                    <field name="paid_amount"/>
+                                    <field name="amortization"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </xpath>
+
+                    <xpath expr="//form/sheet/group" position="after">
+                        <field name="txtbool" invisible="1"/>
+                        <separator string="Archivo plano para Bancolombia" attrs="{'invisible': [('txtbool', '=', False)]}"/>
+                        <field name="txtfile_filename" invisible="1"/>
+                        <field widget="binary" height="64" name="txtfile" filename="txtfile_filename" readonly="1" attrs="{'invisible': [('txtbool', '=', False)]}"/>
+                    </xpath>
+
+                </data>
+            </field>
+        </record>
+
+        <record id="hr_payslip_run_form_txt_inherit_view" model="ir.ui.view">
+			<field name="name">hr.payslip.run.txt.inherit.form</field>
+			<field name="model">hr.payslip.run</field>
+			<field name="inherit_id" ref="hr_payroll.hr_payslip_run_form"/>
+			<field name="arch" type="xml">
+				<xpath expr="//form/sheet/group" position="after">
+					<field name="txtbool" invisible="1"/>
+					<separator string="Archivo plano para Bancolombia" attrs="{'invisible': [('txtbool', '=', False)]}"/>
+					<field name="txtfile_filename" invisible="1"/>
+					<field widget="binary" height="64" name="txtfile" filename="txtfile_filename" readonly="1" attrs="{'invisible': [('txtbool', '=', False)]}"/>
+				</xpath>
+
+                <field name="credit_note" position="after">
+                    <field name="type_application" />
+                </field>
+
+			</field>
+		</record>
+
+    </data>
+</odoo>

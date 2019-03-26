@@ -1,0 +1,45 @@
+language: python
+
+python:
+  - "3.5"
+
+sudo: false
+cache:
+  apt: true
+  directories:
+    - $HOME/.cache/pip
+
+addons:
+  apt:
+    packages:
+      - expect-dev
+      - python-lxml
+      - python-simplejson
+      - python-yaml
+      - swig  # Required for m2crypto
+      - python-m2crypto
+      - xmlstarlet
+      - xsltproc
+      - openssl
+      - poppler-utils
+      - antiword
+
+env:
+  global:
+  - VERSION="11.0" ODOO_REPO="odoo/odoo" TESTS="0" LINT_CHECK="0" COUNTRY="CO"
+  - LANG_ALLOWED="es"
+  - PSQL_VERSION="9.5"
+  matrix:
+  - TESTS="1" ODOO_REPO="odoo/odoo"
+  - LINT_CHECK="1"
+
+install:
+  - git clone https://github.com/OCA/maintainer-quality-tools.git ${HOME}/maintainer-quality-tools
+  - export PATH=${HOME}/maintainer-quality-tools/travis:${PATH}
+  - travis_install_nightly
+
+script:
+  - travis_wait travis_run_tests
+
+after_success:
+  - travis_after_tests_success

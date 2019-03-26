@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_contract_view_form_prime_inherit" model="ir.ui.view">
+            <field name="name">hr.contract.form.prime</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="job_id" position="after">
+                        <field name="is_prime" />
+                    </field>
+                    <field name="wage" position="after">
+                        <field name="wage_type"/>
+                    </field>
+                    <field name="advantages" position="before">
+                        <field name="overtime_structure_id"/>
+                    </field>
+
+                </data>
+            </field>
+        </record>
+    </data>
+</odoo>

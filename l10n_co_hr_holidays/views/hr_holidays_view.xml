@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_holidays_form_inherit2_view" model="ir.ui.view">
+        <field name="name">hr.holidays.inherit2.form</field>
+        <field name="model">hr.holidays</field>
+        <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
+        <field name="arch" type="xml">
+            <field name="payslip_status" position="after">
+                <field name="upload_file" filename="file_name"/>
+                <field name="file_name" invisible="1"/>
+            </field>
+            <field name="holiday_status_id" position="after">
+                <field name="holiday_status_type" attrs="{'invisible': [('holiday_status_id', '!=', 2)]}"/>
+            </field>
+            <field name="holiday_type" position="after">
+                <field name="payed"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

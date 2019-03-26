@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_prima" model="hr.contribution.register">
+        <field name="name">PRIMA</field>
+    </record>
+
+    <record id="hr_order" model="hr.contribution.register">
+        <field name="name">Créditos</field>
+    </record>
+
+    <record id="hr_loan" model="hr.contribution.register">
+        <field name="name">Préstamos</field>
+    </record>
+
+    <record id="hr_savef" model="hr.contribution.register">
+        <field name="name">Ahorros</field>
+    </record>
+
+    <record id="hr_socialc" model="hr.contribution.register">
+        <field name="name">Contribución social</field>
+    </record>
+
+    <record id="contrib_register_employees" model="hr.contribution.register">
+        <field name="name">Employees</field>
+        <field name="partner_id" eval="False"/>
+    </record>
+
+    <record id="hr_eps" model="hr.contribution.register">
+        <field name="name">Registro EPS</field>
+    </record>
+
+    <record id="hr_pension" model="hr.contribution.register">
+        <field name="name">Registro Pension</field>
+    </record>
+
+    <record id="hr_svida" model="hr.contribution.register">
+        <field name="name">Seguro de vida</field>
+    </record>
+
+    <record id="hr_fsolidaridad" model="hr.contribution.register">
+        <field name="name">Registro Fondo de solidaridad</field>
+    </record>
+
+    <record id="hr_transporte" model="hr.contribution.register">
+        <field name="name">Auxilio de transporte</field>
+    </record>
+
+    <record id="hr_enfermedad_g" model="hr.contribution.register">
+        <field name="name">Enfermedad general</field>
+    </record>
+
+    <record id="hr_enfermedad_p" model="hr.contribution.register">
+        <field name="name">Enfermedad profesional</field>
+    </record>
+
+    <record id="hr_hextras" model="hr.contribution.register">
+        <field name="name">Horas extras</field>
+    </record>
+
+</odoo>

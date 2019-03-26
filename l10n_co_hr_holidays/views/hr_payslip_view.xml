@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_hr_payslip_form_disease" model="ir.ui.view">
+        <field name="name">hr.payslip.inherit.disease</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+        <field name="arch" type="xml">
+            <field name="credit_note" position="after">
+                <field name="general_disease" invisible="1"/>
+                <field name="professional_disease" invisible="1"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <!-- Language -->
+    <record model="ir.ui.view" id="view_language_tree">
+        <field name="name">hr.language.tree</field>
+        <field name="model">hr.language</field>
+        <field name="arch" type="xml">
+            <tree string="Languages">
+                <field name="employee_id"/>
+                <field name="description"/>
+                <field name="can_read"/>
+                <field name="can_write"/>
+                <field name="can_speak"/>
+            </tree>
+        </field>
+    </record>
+
+  </data>
+</odoo>
