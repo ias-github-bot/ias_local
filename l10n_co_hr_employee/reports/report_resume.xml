@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<odoo>
+       <template id="report_resume_doc">
+           <t t-set="head">
+               <link rel="stylesheet" type="text/css" href="/l10n_co_hr_employee/static/src/css/hr_resume.css"/>
+           </t>
+           <t t-call="l10n_co_hr_employee.external_layout">
+               <t t-set="o" t-value="o.with_context({'lang':user.lang})" />
+               <div class="article o_report_layout_standard">
+                   <div class="page" style="width:100%;">
+                       <div class="oe_structure"/>
+                        <div class="text-center" style="width:80%">
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <span style="font-size: 22pt;" t-field="o.name"/><br/>
+                            <span style="font-weight:bold; font-size: 13pt;" t-field="o.job_id"/>
+                        </div>
+                        <div style="width:15%; float:right; top: -70px; position: relative;">
+                              <span style="height:60px; width=40px;" t-field="o.image" t-field-options='{"widget": "image"}'/>
+                        </div>
+                         <div style="width:100%; margin-top:50px;">
+                           <br/>
+                           <div style="font-size: 18pt; font-weight:bold;">Personal Data</div>
+                           <div>
+                               <p><strong>Birthday:</strong> <t t-esc="o.birthday"/></p>
+                               <p><strong>Place of birthday:</strong> <t t-esc="o.place_of_birth"/></p>
+                               <p><strong>Identification document:</strong> <t t-esc="o.document_type"/>  <t t-esc="o.identification_id"/></p>
+                               <p><strong>Age:</strong> <t t-esc="o.age"/></p>
+                               <p><strong>Marital:</strong> <t t-esc="o.marital"/></p>
+                               <p><strong>Address:</strong> <t t-esc="o.address_home_id.name"/> <t t-esc="o.address_home_id.city"/> - <t t-esc="o.address_home_id.country_id.name"/></p>
+                           </div>
+                       </div>
+                       <div style="width:100%; margin-top:50px;">
+                           <br/>
+                           <div style="font-size: 18pt; font-weight:bold;">Professional profile</div>
+                           <br/>
+                           <p><t t-esc="o.biography" /> </p>
+                       </div>
+                       <div style="width:100%; margin-top:40px;">
+                           <div style="font-size: 16pt; font-weight:bold;">Academic</div>
+                           <div style="font-size: 10pt;">
+                               <t t-foreach="o.academic_ids" t-as="academic">
+                                    - <span style="font-weight:bold;" t-field="academic.name"/>
+                                   <span t-field="academic.partner_id"/>
+                                   <span t-field="academic.location"/>
+                                   (<span t-field="academic.end_date"  t-field-options='{"format": "MMMM y"}'/>)
+                                   <br/>
+                               </t>
+                           </div>
+                       </div>
+                       <div style="width:100%; margin-top:40px;">
+                           <div style="font-size: 16pt; font-weight:bold;">Work experience</div>
+                           <div style="font-size: 10pt;">
+                               <t t-foreach="o.experience_ids" t-as="experience">
+                                    <span style="font-weight:bold;" t-field="experience.name"/>:<br/>
+                                   <span t-field="experience.description"/><br/>
+                               </t>
+                           </div>
+                       </div>
+                       <div style="width:100%; margin-top:40px;">
+                           <div style="font-size: 16pt; font-weight:bold;">Medical exam</div>
+                           <div style="font-size: 10pt;">
+                               <t t-foreach="o.medical_exam_ids" t-as="medical_exam">
+                                   <span t-field="medical_exam.date"/><br/>
+                                   <span t-field="medical_exam.type"/><br/>
+                                   <span t-field="medical_exam.res_partner_id.name"/><br/>
+                                   <span t-field="medical_exam.commentary"/><br/>
+                                   <br/>
+                               </t>
+                           </div>
+                       </div>
+                       <div style="width:100%; margin-top:40px;">
+                           <div style="font-size: 16pt; font-weight:bold;">Infractions</div>
+                           <div style="font-size: 10pt;">
+                               <t t-foreach="o.infraction_ids" t-as="infraction">
+                                   <span t-field="infraction.name"/><br/>
+                                   <span t-field="infraction.date"/><br/>
+                                   <span t-field="infraction.action_ids.type"/><br t-if="infraction.action_ids.type" />
+                                   <span t-field="infraction.memo"/><br/>
+                                   <br/>
+                               </t>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+          </t>
+       </template>
+
+      <template id="report_resume">
+          <link rel="stylesheet" type="text/css" href="/l10n_co_hr_employee/static/src/css/hr_resume.css"/>
+        <t t-foreach="docs" t-as="o">
+            <t t-call="l10n_co_hr_employee.report_resume_doc" t-lang="user.lang"/>
+        </t>
+    </template>
+
+      <report id="hr_resume_report"
+         string="Employee Resume"
+         model="hr.employee"
+         report_type="qweb-pdf"
+         name="l10n_co_hr_employee.report_resume"
+         file="l10n_co_hr_employee.report_resume"
+         menu="True"/>
+
+    <record id="hr_resume_format_report" model="report.paperformat" >
+        <field name="name">European HR Resume</field>
+        <field name="default" eval="True" />
+        <field name="format">A4</field>
+        <field name="page_height">0</field>
+        <field name="page_width">0</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">10</field>
+        <field name="margin_bottom">23</field>
+        <field name="margin_left">10</field>
+        <field name="margin_right">10</field>
+        <field name="header_line" eval="False" />
+        <field name="header_spacing">10</field>
+        <field name="dpi">90</field>
+
+    </record>
+
+    <record id="hr_resume_report" model="ir.actions.report">
+        <field name="paperformat_id" ref="hr_resume_format_report"/>
+    </record>
+</odoo>

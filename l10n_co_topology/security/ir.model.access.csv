@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+access_res_country_sector_group_user,access_res_country_sector,model_res_country_sector,base.group_user,1,0,0,0
+access_res_country_municipality_erp_manager,access_res_country_municipality,model_res_country_municipality,base.group_user,1,1,1,1
+access_week_days,access_week_days,model_week_days,base.group_user,1,1,1,1

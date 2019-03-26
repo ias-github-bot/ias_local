@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_contract_type_view_form_inherit_co" model="ir.ui.view">
+        <field name="name">hr.contract.type.form.inherit.co</field>
+        <field name="model">hr.contract.type</field>
+         <field name="inherit_id" ref="hr_contract.hr_contract_type_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='name']" position="after">
+                    <field col="4" name="training"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="hr_contract_form_inherit_co" model="ir.ui.view">
+        <field name="name">hr.contract.form.inherit.co</field>
+        <field name="model">hr.contract</field>
+        <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+        <field name="arch" type="xml">
+
+             <xpath expr="//field[@name='type_id']" position="after">
+                 <field name="training" invisible="1" />
+                 <field name="stage" attrs="{'invisible': [('training', '!=', True)]}" />
+             </xpath>
+              <xpath expr="//field[@name='trial_date_end']" position="after">
+                    <field name="date_start_practice_stage" attrs="{'invisible': [('stage', '!=', 'practice')]} "/>
+              </xpath>
+        </field>
+    </record>
+
+</odoo>

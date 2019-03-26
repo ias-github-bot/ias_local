@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hr_department_transfer_cron" model="ir.cron">
+            <field name="name">Departmental Transfers</field>
+            <field name="model_id" ref="model_hr_department_transfer"/>
+            <field name="state">code</field>
+            <field name="code">model.try_pending_department_transfers()</field>
+            <field name="user_id" ref="base.user_root"/>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="nextcall" eval="(DateTime.now() + timedelta(hours= +(24-DateTime.now().hour))).strftime('%Y-%m-%d 0:01:00')" />
+            <field name="doall" eval="True"/>
+            <field name="priority">1</field>
+        </record>
+
+
+        <!-- Expired Curriculum -->
+
+        <record id="mt_certification_to_expire" model="mail.message.subtype">
+            <field name="name">To Expired</field>
+            <field name="res_model">hr.certification</field>
+            <field name="default" eval="True"/>
+            <field name="description">Certification about to expire</field>
+        </record>
+
+        <record id="mt_certification_expired" model="mail.message.subtype">
+            <field name="name">Expired</field>
+            <field name="res_model">hr.certification</field>
+            <field name="default" eval="True"/>
+            <field name="description">Certification expired</field>
+        </record>
+
+        <record id="ir_cron_data_certification_update_state" model="ir.cron">
+            <field name="name">Hr Certification: expire</field>
+            <field name="model_id" ref="model_hr_certification"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.next_to_expire()</field>
+            <field name="interval_number">7</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+         <!-- Training contract -->
+
+        <record id="mt_training_contract_practice_stage" model="mail.message.subtype">
+            <field name="name">Training contract</field>
+            <field name="res_model">hr.contract</field>
+            <field name="default" eval="True"/>
+            <field name="description">Training contract in practice stage.</field>
+        </record>
+
+
+        <record id="ir_training_contract_practice_stage" model="ir.cron">
+            <field name="name">Hr Contract: practice stage</field>
+            <field name="model_id" ref="model_hr_contract"/>
+            <field name="type">ir.actions.server</field>
+            <field name="state">code</field>
+            <field name="code">model.training_contract_practice_stage()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="week.days" id="d1">
+            <field name="name">Monday</field>
+        </record>
+
+        <record model="week.days" id="d2">
+            <field name="name">Tuesday</field>
+        </record>
+
+        <record model="week.days" id="d3">
+            <field name="name">Wednesday</field>
+        </record>
+
+        <record model="week.days" id="d4">
+            <field name="name">Thursday</field>
+        </record>
+
+        <record model="week.days" id="d5">
+            <field name="name">Friday</field>
+        </record>
+
+        <record model="week.days" id="d6">
+            <field name="name">Saturday</field>
+        </record>
+
+        <record model="week.days" id="d7">
+            <field name="name">Sunday</field>
+        </record>
+
+    </data>
+</odoo>

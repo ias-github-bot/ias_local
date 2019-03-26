@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_employee_accumulated tree" model="ir.ui.view">
+            <field name="name">hr.employee.acumulated.tree</field>
+            <field name="model">hr.employee.acumulated</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date"/>
+                    <field name="year_name"/>
+                    <field name="last_month"/>
+                    <field name="employee_id"/>
+                    <field name="wage"/>
+                    <field name="rule_name"/>
+                    <field name="rule_amount"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="hr_employee_acumulated_action">
+            <field name="name">Acumulated amounts</field>
+            <field name="res_model">hr.employee.acumulated</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+        <menuitem action="hr_employee_acumulated_action" id="acumulated_tree" parent="hr_payroll.menu_hr_payroll_root" groups="hr.group_hr_user"/>
+    </data>
+</odoo>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Salary Structure -->
+
+    <record id="structure_base" model="hr.payroll.structure">
+        <field name="code">EG001</field>
+        <field name="name">Estructura General Colombia</field>
+        <field eval="[(6, 0, [ref('l10n_co_hr_payroll.hr_rule_basic2'), ref('l10n_co_hr_payroll.hr_rule_taxable2'), ref('l10n_co_hr_payroll.hr_payroll_rules_enfermedad_general'), ref('l10n_co_hr_payroll.hr_payroll_rules_enfermedad_profesional'), ref('l10n_co_hr_payroll.hr_payroll_eps_rule'), ref('l10n_co_hr_payroll.hr_payroll_pension_rule'), ref('l10n_co_hr_payroll.hr_payroll_rules_fsolidaridad'), ref('l10n_co_hr_payroll.hr_payroll_rules_transporte'), ref('l10n_co_hr_payroll.hr_payroll_rules_svida'), ref('l10n_co_hr_payroll.hr_payroll_rules_order'), ref('l10n_co_hr_payroll.hr_payroll_rules_loan'), ref('l10n_co_hr_payroll.hr_payroll_rules_savef'), ref('l10n_co_hr_payroll.hr_payroll_rules_socialc'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime2'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime3'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime4'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime5'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime6'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime7'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime8'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime9'),
+        ref('l10n_co_hr_payroll.hr_rule_overtime10'),
+        ref('l10n_co_hr_payroll.hr_payroll_rules_prima'),
+        ref('l10n_co_hr_payroll.hr_rule_net2')])]" name="rule_ids"/>
+        <field name="company_id" ref="base.main_company"/>
+        <field name="parent_id" ref=""/>
+    </record>
+
+</odoo>

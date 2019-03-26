@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_employee_acumulated,hr.employee.acumulated,model_hr_employee_acumulated,base.group_user,1,1,1,1
+access_hr_overtime,hr.overtime,model_hr_overtime,base.group_user,1,1,1,1
+access_hr_overtime_structure,hr.overtime.structure,model_hr_overtime_structure,base.group_user,1,1,1,1
+access_hr_ov_structure_rule_type,hr.ov.structure.rule.type,model_hr_ov_structure_rule_type,base.group_user,1,1,1,1
+access_hr_ov_structure_rule_type_detail,hr.ov.structure.rule.type.detail,model_hr_ov_structure_rule_type_detail,base.group_user,1,1,1,1
+access_hr_ov_structure_rule,hr.ov.structure.rule,model_hr_ov_structure_rule,base.group_user,1,1,1,1
+access_hr_social_contribution,hr.social.contribution,model_hr_social_contribution,base.group_user,1,1,1,1
+access_hr_social_contribution_line,hr.social.contribution.line,model_hr_social_contribution_line,base.group_user,1,1,1,1
+access_hr_loan_user,hr.loan,model_hr_loan,base.group_user,1,1,1,1
+access_hr_loan_manager,hr.loan,model_hr_loan,hr.group_hr_manager,1,1,1,1
+access_hr_loan_line_user,hr.loan.line,model_hr_loan_line,base.group_user,1,1,1,1
+access_hr_loan_line_manager,hr.loan.line,model_hr_loan_line,hr.group_hr_manager,1,1,1,1
+access_hr_contract_user,hr.contract,hr_contract.model_hr_contract,base.group_user,1,0,0,0
+access_hr_payroll_structure,hr.payroll.structure,hr_payroll.model_hr_payroll_structure,base.group_user,1,0,0,0
+access_hr_loan_officer,hr.loan,model_hr_loan,hr.group_hr_user,1,1,1,1
+access_hr_payslip_sequence,access_hr_payslip_sequence,model_hr_payslip_sequence,hr.group_hr_user,1,0,0,0

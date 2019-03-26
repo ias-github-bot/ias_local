@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="hr_payroll_rules_prima" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.prime &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (payslip.prime)</field>
+        <field name="code">PRIMA</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_prima"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_prima"/>
+        <field name="name">PRIMA</field>
+        <field name="sequence" eval="124"/>
+    </record>
+
+    <record id="hr_rule_overtime" model="hr.salary.rule">
+        <field name="name">Horas extras dias laborales diurno</field>
+        <field name="sequence" eval="140"/>
+        <field name="code">OT-WORKDAY (Horas extras diurnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVWDEDH</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVWDEDH and worked_days.OVWDEDH.number_of_hours*payslip.salary_hour*(worked_days.OVWDEDH.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime2" model="hr.salary.rule">
+        <field name="name">Horas extras dias laborales nocturno</field>
+        <field name="sequence" eval="140"/>
+        <field name="code">OT-WORKDAY (Horas extras nocturnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVWDENH</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVWDENH and worked_days.OVWDENH.number_of_hours*payslip.salary_hour*(worked_days.OVWDENH.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime3" model="hr.salary.rule">
+        <field name="name">Recargo nocturno</field>
+        <field name="sequence" eval="142"/>
+        <field name="code">OT-RECHARGE (Recargo nocturno)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVRCHRGNO</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVRCHRGNO and worked_days.OVRCHRGNO.number_of_hours*payslip.salary_hour*(worked_days.OVRCHRGNO.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime4" model="hr.salary.rule">
+        <field name="name">Recargo dominical o festivo</field>
+        <field name="sequence" eval="142"/>
+        <field name="code">OT-RECHARGE (Recargo dominical o festivo)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVRCHRGSHS</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVRCHRGSHS and worked_days.OVRCHRGSHS.number_of_hours*payslip.salary_hour*(worked_days.OVRCHRGSHS.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime5" model="hr.salary.rule">
+        <field name="name">Horas extras dominicales o festivas diurnas</field>
+        <field name="sequence" eval="141"/>
+        <field name="code">OT-WEEKEND (Horas extras dominicales o festivas diurnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVWESFED</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVWESFED and worked_days.OVWESFED.number_of_hours*payslip.salary_hour*(worked_days.OVWESFED.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime6" model="hr.salary.rule">
+        <field name="name">Horas extras dominicales o festivas nocturnas</field>
+        <field name="sequence" eval="141"/>
+        <field name="code">OT-WEEKEND (Horas extras dominicales o festivas nocturnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVWESFENT</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVWESFENT and worked_days.OVWESFENT.number_of_hours*payslip.salary_hour*(worked_days.OVWESFENT.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime7" model="hr.salary.rule">
+        <field name="name">Dominical o festivo nocturno</field>
+        <field name="sequence" eval="141"/>
+        <field name="code">OT-WEEKEND (Dominical o festivo nocturno)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVWESFNT</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVWESFNT and worked_days.OVWESFNT.number_of_hours*payslip.salary_hour*(worked_days.OVWESFNT.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime8" model="hr.salary.rule">
+        <field name="name">Ausencias oficiales dominicales o festivas diurnas</field>
+        <field name="sequence" eval="143"/>
+        <field name="code">OT-OFFICIAL-LEAVE (Ausencias oficiales dominicales o festivas diurnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVOLSFET</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVOLSFET and worked_days.OVOLSFET.number_of_hours*payslip.salary_hour*(worked_days.OVOLSFET.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime9" model="hr.salary.rule">
+        <field name="name">Horas extras ausencias oficiales dominicales o festivas diurnas</field>
+        <field name="sequence" eval="143"/>
+        <field name="code">OT-OFFICIAL-LEAVE (Horas extras ausencias oficiales dominicales o festivas nocturnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVOLSFENT</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVOLSFENT and worked_days.OVOLSFENT.number_of_hours*payslip.salary_hour*(worked_days.OVOLSFENT.rate/100) or False</field>
+    </record>
+
+    <record id="hr_rule_overtime10" model="hr.salary.rule">
+        <field name="name">Ausencias oficiales dominicales o festivas nocturnas</field>
+        <field name="sequence" eval="143"/>
+        <field name="code">OT-OFFICIAL-LEAVE (Ausencias oficiales dominicales o festivas nocturnas)</field>
+        <field name="category_id" ref="l10n_co_hr_payroll.hr_category_overtime"/>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result=worked_days.OVOLSFNT</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result=worked_days.OVOLSFNT and worked_days.OVOLSFNT.number_of_hours*payslip.salary_hour*(worked_days.OVOLSFNT.rate/100) or False</field>
+    </record>
+
+    <record id="hr_payroll_rules_order" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.total_order &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(payslip.total_order)</field>
+        <field name="code">CRÉDITO</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_order"/>
+        <field name="name">Total créditos</field>
+        <field name="sequence" eval="124"/>
+    </record>
+
+    <record id="hr_payroll_rules_loan" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.total_loan &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(payslip.total_loan)</field>
+        <field name="code">PRÉSTAMO</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_loan"/>
+        <field name="name">Total préstamos</field>
+        <field name="sequence" eval="125"/>
+    </record>
+
+    <record id="hr_payroll_rules_savef" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.total_savefunds &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(payslip.total_savefunds)</field>
+        <field name="code">AHORROS</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_savef"/>
+        <field name="name">Total ahorros</field>
+        <field name="sequence" eval="126"/>
+    </record>
+
+    <record id="hr_payroll_rules_socialc" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.total_socialc &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -(payslip.total_socialc)</field>
+        <field name="code">CONTRIBUCIÓNSOCIAL</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_socialc"/>
+        <field name="name">Total contribución social</field>
+        <field name="sequence" eval="127"/>
+    </record>
+
+    <record id="hr_rule_basic2" model="hr.salary.rule">
+        <field name="amount_select">percentage</field>
+        <field eval="100" name="amount_percentage"/>
+        <field name="amount_percentage_base">payslip.salary_hour * worked_days.WORK100.number_of_hours</field>
+        <field name="code">BASICO</field>
+        <field name="category_id" ref="hr_payroll.BASIC"/>
+        <field name="name">Basico</field>
+        <field name="condition_python">result = (contract.type_id.name != 'Training')</field>
+        <field name="sequence" eval="1"/>
+    </record>
+
+    <record id="hr_rule_taxable2" model="hr.salary.rule">
+        <field name="name">Gross</field>
+        <field name="sequence" eval="100"/>
+        <field name="code">GROSS</field>
+        <field name="category_id" ref="hr_payroll.GROSS"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = categories.BASIC + categories.ALW</field>
+    </record>
+
+    <record id="hr_rule_net2" model="hr.salary.rule">
+        <field name="name">TOTAL</field>
+        <field name="sequence" eval="200"/>
+        <field name="code">Total</field>
+        <field name="category_id" ref="hr_payroll.NET"/>
+        <field name="condition_select">none</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = categories.BASIC + categories.ALW + categories.DED</field>
+        <field name="register_id" ref="l10n_co_hr_payroll.contrib_register_employees"/>
+    </record>
+
+    <record id="hr_payroll_eps_rule" model="hr.salary.rule">
+        <field name="amount_select">percentage</field>
+        <field eval="120" name="sequence"/>
+        <field eval="-4" name="amount_percentage"/>
+        <field name="amount_percentage_base">payslip.salary_hour * worked_days.WORK100.number_of_hours</field>
+        <field name="code">EPS</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_eps"/>
+        <field name="name">EPS</field>
+    </record>
+
+    <record id="hr_payroll_pension_rule" model="hr.salary.rule">
+        <field name="amount_select">percentage</field>
+        <field eval="121" name="sequence"/>
+        <field eval="-4" name="amount_percentage"/>
+        <field name="amount_percentage_base">payslip.salary_hour * worked_days.WORK100.number_of_hours</field>
+        <field name="code">PNSN</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_pension"/>
+        <field name="name">Pension</field>
+    </record>
+
+    <record id="hr_payroll_rules_fsolidaridad" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.wage &gt; (737717 * 4))</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = (payslip.salary_hour * worked_days.WORK100.number_of_hours * -1) / 100</field>
+        <field name="code">FNDDSLDRDD</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_fsolidaridad"/>
+        <field name="name">Fondo de solidaridad</field>
+        <field name="sequence" eval="122"/>
+    </record>
+
+    <record id="hr_payroll_rules_svida" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (payslip.amount_s_vida &gt; 0)</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = -payslip.amount_s_vida</field>
+        <field name="code">SVIDA</field>
+        <field name="category_id" ref="hr_payroll.DED"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_svida"/>
+        <field name="name">Seguro de vida</field>
+        <field name="sequence" eval="123"/>
+    </record>
+
+    <record id="hr_payroll_rules_enfermedad_general" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = payslip.general_disease</field>
+        <field name="amount_select">percentage</field>
+        <field eval="125" name="sequence"/>
+        <field eval="66.67" name="amount_percentage"/>
+        <field name="amount_percentage_base">payslip.salary_hour*worked_days.GenDisease.number_of_hours</field>
+        <field name="code">GD</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_enfermedad_g"/>
+        <field name="name">Enfermedad general</field>
+    </record>
+
+    <record id="hr_payroll_rules_enfermedad_profesional" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = payslip.professional_disease</field>
+        <field name="amount_select">percentage</field>
+        <field eval="126" name="sequence"/>
+        <field eval="100" name="amount_percentage"/>
+        <field name="amount_percentage_base">payslip.salary_hour*worked_days.ProDisease.number_of_hours</field>
+        <field name="code">PD</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_enfermedad_p"/>
+        <field name="name">Enfermedad ocupacional</field>
+    </record>
+
+    <record id="hr_payroll_rules_transporte" model="hr.salary.rule">
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.wage &lt;= (737717 * 2)) and (contract.stage != 'elective')</field>
+        <field name="amount_select">fix</field>
+        <field name="quantity">1</field>
+        <field name="amount_fix">83140</field>
+        <field name="code">AUXTRANS</field>
+        <field name="category_id" ref="hr_payroll.ALW"/>
+        <field name="register_id" ref="l10n_co_hr_payroll.hr_transporte"/>
+        <field name="name">Auxilio de transporte</field>
+        <field name="sequence" eval="127"/>
+    </record>
+
+    <record id="hr_rule_training" model="hr.salary.rule">
+        <field name="name">Aprendizaje</field>
+        <field name="category_id" ref="hr_payroll.BASIC"/>
+        <field name="code">APRENDIZAJE</field>
+        <field name="active">True</field>
+        <field name="appears_on_payslip">True</field>
+        <field name="condition_select">python</field>
+        <field name="condition_python">result = (contract.type_id.name == 'Training')</field>
+        <field name="amount_select">code</field>
+        <field name="amount_python_compute">result = contract.wage * 0.75</field>
+        <field name="sequence" eval="5"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--Department-->
+
+        <record id="dep_adm" model="hr.department">
+            <field name="name">Administrativa</field>
+        </record>
+
+        <record id="dep_com" model="hr.department">
+            <field name="name">Comercial</field>
+        </record>
+
+        <record id="dep_ops" model="hr.department">
+            <field name="name">Operaciones</field>
+        </record>
+
+	    <record id="dep_th" model="hr.department">
+            <field name="name">Talento humano</field>
+        </record>
+
+    </data>
+</odoo>

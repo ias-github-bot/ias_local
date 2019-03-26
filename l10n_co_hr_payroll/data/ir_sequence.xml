@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<odoo>
+    <data noupdate='1'>
+		<!-- Sequence -->
+		<record id="ir_seq_hr_overtime" model="ir.sequence">
+			<field name="name">Solicitud de hora extra</field>
+			<field name="code">hr.ov.req</field>
+			<field name="prefix">OV</field>
+			<field name="padding">4</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+
+		<record id="ir_seq_hr_loan" model="ir.sequence">
+			<field name="name">Préstamos</field>
+			<field name="code">hr.loan.req</field>
+			<field name="prefix">Préstamo NO </field>
+			<field name="padding">6</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+
+        <record id="ir_seq_hr_order" model="ir.sequence">
+			<field name="name">Crédito</field>
+			<field name="code">hr.order.req</field>
+			<field name="prefix">Crédito NO </field>
+			<field name="padding">6</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+
+        <record id="ir_seq_hr_sf" model="ir.sequence">
+			<field name="name">Ahorro</field>
+			<field name="code">hr.sf.req</field>
+			<field name="prefix">Ahorro NO </field>
+			<field name="padding">6</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+
+        <record id="ir_seq_hr_sc" model="ir.sequence">
+			<field name="name">Contribución social</field>
+			<field name="code">hr.sc.req</field>
+			<field name="prefix">Contribución social NO </field>
+			<field name="padding">6</field>
+			<field name="number_increment">1</field>
+			<field name="number_next_actual">1</field>
+			<field name="implementation">standard</field>
+		</record>
+	</data>
+</odoo>

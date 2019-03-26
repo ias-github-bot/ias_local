@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+
+      <record id="view_partner_form_acreedores" model="ir.ui.view">
+          <field name="name">res.partner.form.acreedores</field>
+          <field name="model">res.partner</field>
+          <field name="inherit_id" ref="base.view_partner_form"/>
+          <field name="arch" type="xml">
+              <xpath expr="//field[@name='lang']" position="after">
+                      <field name="acreedor" attrs="{'invisible':[('company_type', '=', 'person')]}"/>
+                      <field name="is_active" attrs="{'invisible':[('acreedor','=', False)]}"/>
+                      <field name="percentage_social_contribution" attrs="{'invisible':[('acreedor','=', False)]}"/>
+                      <field name="top_social_contribution" attrs="{'invisible':[('acreedor','=', False)]}"/>
+                      <field name="code" attrs="{'invisible':[('acreedor','=', False)]}"/>
+              </xpath>
+          </field>
+      </record>
+
+      <record id="action_partner_acreedor_form" model="ir.actions.act_window">
+          <field name="name">Creditors</field>
+          <field name="type">ir.actions.act_window</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_type">form</field>
+          <field name="domain">[('acreedor','=',True)]</field>
+          <field name="view_mode">kanban,tree,form</field>
+          <field name="context">
+            {'search_default_supplier': 1,'default_customer': 0,'default_supplier': 1, 'default_company_type': 'company', 'default_acreedor': 1}</field>
+          <field name="filter" eval="True"/>
+      </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,133 @@
+<odoo>
+    <template id="account.report_invoice_document">
+        <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})" />
+            <div class="page">
+                <link rel="stylesheet" href="/ias_billing/static/src/css/report.css"/>
+                <div class="text-center font12">
+                    <span t-esc="o.company_id.street"/> <br/>
+                    <span t-esc="o.company_id.street2"/> <br/>
+                    <span t-esc="o.company_id.city"/> -
+                    <span t-esc="o.company_id.country_id.name"/> <br/>
+                    <br/>
+                    <p>Facturación habilitada por la DIAN Según Autorización No.<span t-esc="o.company_id.resolution" /><br/>
+                        Fecha de expedición <span t-esc="o.company_id.authorization_date" /><br/>
+                        Desde el No <span t-esc="o.company_id.from_res" /> Hasta el No <span t-esc="o.company_id.to_res" /><br/>
+                        Régimen Común
+                    </p>
+                </div>
+                <div>
+                    <br/>
+                    <br/>
+                    <table class="table_invoice">
+                        <colgroup>
+                            <col width='70%'/>
+                            <col width='30%' />
+                        </colgroup>
+                        <tr>
+                            <td class="bold text-left"><span t-field="o.partner_id"/></td>
+                            <td class="border text-center bold"><span>Fecha De Expedición</span></td>
+                        </tr>
+                        <tr>
+                            <td class="bold text-left"><span>NIT.</span> <span t-field="o.partner_id.vat"/></td>
+                            <td class="border text-center"><span t-field="o.date_invoice"/></td>
+                        </tr>
+                         <tr>
+                            <td class="bold text-left"><span>Dirección</span> <span t-field="o.partner_id.street"/></td>
+                            <td class="border text-center bold">Fecha De Vencimineto</td>
+                        </tr>
+                         <tr>
+                            <td class="bold text-left"><span>Teléfono</span> <span t-field="o.partner_id.phone"/></td>
+                            <td class="border text-center"><span t-field="o.date_due"/></td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <br/>
+                    <table class="table_invoice1">
+                        <colgroup>
+                            <col width='40%'/>
+                            <col width='20%' />
+                            <col width='20%' />
+                            <col width='20%' />
+                        </colgroup>
+                        <tr class="text-center title">
+                            <td class="text-center border bold"><span>Descripción</span></td>
+                            <td class="text-center border bold"><span>Cantidad</span></td>
+                            <td class="text-center border bold"><span>Precio</span></td>
+                            <td class="text-center border bold"><span>Total</span></td>
+                        </tr>
+                        <tr t-foreach="o.invoice_line_ids" t-as="l">
+                            <td class="border text-left td_height"><span t-field="l.product_id"/></td>
+                            <td class="border text-left "><span t-esc="'%.0f'%(l.quantity)"/></td>
+                            <td class="border text-left "><span t-field="l.price_unit" t-field-options='{"widget": "monetary","display_currency": "o.currency_id"}'/></td>
+                            <td class="border text-left"> <span t-field="l.price_subtotal" t-field-options='{"widget": "monetary","display_currency": "o.currency_id"}'/></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7"></td>
+                            <td colspan="2" class="text-center border"><span>Subtotal</span></td>
+                            <td class="border text-left"><span t-field="o.amount_untaxed" t-field-options='{"widget": "monetary","display_currency": "o.currency_id"}'/></td>
+                        </tr>
+                        <tr>
+                            <td class="border text-left"><span>Rete Fuente</span></td>
+                            <td class="border text-left"></td>
+                            <td class="border text-left"></td>
+                        </tr>
+                        <tr>
+                            <td class="border text-left"><span>Retención ICA</span></td>
+                            <td class="border text-left"></td>
+                            <td class="border text-left"></td>
+                        </tr>
+                         <tr>
+                            <td class="border text-left"><span>Retención CREE</span></td>
+                            <td class="border text-left"></td>
+                            <td class="border text-left"></td>
+                        </tr>
+                         <tr>
+                            <td class="border text-left"><span>I.V.A</span></td>
+                            <td class="border text-left"></td>
+                            <td class="border text-left"><span t-field="o.amount_tax" t-field-options='{"widget": "monetary","display_currency": "o.currency_id"}'/></td>
+                        </tr>
+                        <tr>
+                            <td class="border text-left"><span>Rete I.V.A</span></td>
+                            <td class="border text-left"></td>
+                            <td class="border text-left"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-center border"><span>Total</span></td>
+                            <td class="border text-left"><span t-field="o.amount_total" t-field-options='{"widget": "monetary","display_currency": "o.currency_id"}'/></td>
+                        </tr>
+                    </table>
+                </div>
+                <br/>
+                <br/>
+                <div>
+                     <table class="table_invoice">
+                        <tr class="text-center title">
+                            <td class="border bold"><span>Consideraciones Especiales De Esta Factura</span></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td class="border"><br/></td>
+                        </tr>
+                    </table>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <div class="firm">
+                     <hr class="line"/>
+                    <span>Aceptada. Firma y Sello del Cliente</span>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <div class="invoice_terms font11">
+                    <span class="bold">Observaciones:</span><br/>
+                    <div t-field="o.company_id.invoice_terms"/>
+                </div>
+                <br/>
+                <div class="text-center">
+                   <span>*Factura #</span><span t-esc="o.number"/>
+                </div>
+            </div>
+    </template>
+</odoo>

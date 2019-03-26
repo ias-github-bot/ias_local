@@ -1,0 +1,1991 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_co_hr_payroll
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0+e-20180918\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-01 17:54+0000\n"
+"PO-Revision-Date: 2018-10-01 13:20-0500\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: es_CO\n"
+"X-Generator: Poedit 2.1.1\n"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:184
+#, python-format
+msgid ""
+"\n"
+"                                You need to define types and details\n"
+"                                for the overtime structure %s\n"
+"                                "
+msgstr ""
+"\n"
+"Necesita definir tipos y detalles \n"
+"                                para la estructura de horas extra %s."
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "(To update)"
+msgstr "(Para actualizar)"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1900"
+msgstr "1900"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1901"
+msgstr "1901"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1902"
+msgstr "1902"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1903"
+msgstr "1903"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1904"
+msgstr "1904"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1905"
+msgstr "1905"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1906"
+msgstr "1906"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1907"
+msgstr "1907"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1908"
+msgstr "1908"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1909"
+msgstr "1909"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1910"
+msgstr "1910"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1911"
+msgstr "1911"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1912"
+msgstr "1912"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1913"
+msgstr "1913"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1914"
+msgstr "1914"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1915"
+msgstr "1915"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1916"
+msgstr "1916"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1917"
+msgstr "1917"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1918"
+msgstr "1918"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1919"
+msgstr "1919"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1920"
+msgstr "1920"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1921"
+msgstr "1921"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1922"
+msgstr "1922"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1923"
+msgstr "1923"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1924"
+msgstr "1924"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1925"
+msgstr "1925"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1926"
+msgstr "1926"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1927"
+msgstr "1927"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1928"
+msgstr "1928"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1929"
+msgstr "1929"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1930"
+msgstr "1930"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1931"
+msgstr "1931"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1932"
+msgstr "1932"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1933"
+msgstr "1933"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1934"
+msgstr "1934"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1935"
+msgstr "1935"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1936"
+msgstr "1936"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1937"
+msgstr "1937"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1938"
+msgstr "1938"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1939"
+msgstr "1939"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1940"
+msgstr "1940"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1941"
+msgstr "1941"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1942"
+msgstr "1942"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1943"
+msgstr "1943"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1944"
+msgstr "1944"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1945"
+msgstr "1945"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1946"
+msgstr "1946"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1947"
+msgstr "1947"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1948"
+msgstr "1948"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1949"
+msgstr "1949"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1950"
+msgstr "1950"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1951"
+msgstr "1951"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1952"
+msgstr "1952"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1953"
+msgstr "1953"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1954"
+msgstr "1954"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1955"
+msgstr "1955"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1956"
+msgstr "1956"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1957"
+msgstr "1957"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1958"
+msgstr "1958"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1959"
+msgstr "1959"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1960"
+msgstr "1960"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1961"
+msgstr "1961"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1962"
+msgstr "1962"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1963"
+msgstr "1963"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1964"
+msgstr "1964"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1965"
+msgstr "1965"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1966"
+msgstr "1966"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1967"
+msgstr "1967"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1968"
+msgstr "1968"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1969"
+msgstr "1969"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1970"
+msgstr "1970"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1971"
+msgstr "1971"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1972"
+msgstr "1972"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1973"
+msgstr "1973"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1974"
+msgstr "1974"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1975"
+msgstr "1975"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1976"
+msgstr "1976"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1977"
+msgstr "1977"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1978"
+msgstr "1978"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1979"
+msgstr "1979"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1980"
+msgstr "1980"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1981"
+msgstr "1981"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1982"
+msgstr "1982"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1983"
+msgstr "1983"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1984"
+msgstr "1984"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1985"
+msgstr "1985"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1986"
+msgstr "1986"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1987"
+msgstr "1987"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1988"
+msgstr "1988"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1989"
+msgstr "1989"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1990"
+msgstr "1990"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1991"
+msgstr "1991"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1992"
+msgstr "1992"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1993"
+msgstr "1993"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1994"
+msgstr "1994"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1995"
+msgstr "1995"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1996"
+msgstr "1996"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1997"
+msgstr "1997"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1998"
+msgstr "1998"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "1999"
+msgstr "1999"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2000"
+msgstr "2000"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2001"
+msgstr "2001"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2002"
+msgstr "2002"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2003"
+msgstr "2003"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2004"
+msgstr "2004"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2005"
+msgstr "2005"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2006"
+msgstr "2006"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2007"
+msgstr "2007"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2008"
+msgstr "2008"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2009"
+msgstr "2009"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2010"
+msgstr "2010"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2011"
+msgstr "2011"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2012"
+msgstr "2012"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2013"
+msgstr "2013"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2014"
+msgstr "2014"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2015"
+msgstr "2015"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2016"
+msgstr "2016"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2017"
+msgstr "2017"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.employee,year_filter:0
+msgid "2018"
+msgstr "2018"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.overtime.structure,overtime_method:0
+msgid "According to Attendance"
+msgstr "De acuerdo a la asistencia"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.overtime.structure,overtime_method:0
+msgid "According to Request"
+msgstr "De acuerdo con la solicitud"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_social_contribution_form
+msgid "Activate"
+msgstr "Activar"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.social.contribution,state:0
+msgid "Active"
+msgstr "Activo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_partner_is_active
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_users_is_active
+msgid "Active creditor?"
+msgstr "Acreedor activo?"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_actual_leave_time
+msgid "Actual Leave Time"
+msgstr "Tiempo real de vacaciones"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_employee_acumulated
+msgid "Acumulated accounts from payroll"
+msgstr "Montos acumulados desde nomina"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.hr_employee_acumulated_action
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.acumulated_tree
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Acumulated amounts"
+msgstr "Montos acumulados"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_payroll_savef
+msgid "Ahorros"
+msgstr "Ahorros"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_amortization
+msgid "Amortization"
+msgstr "Amortización"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_paid_amount
+msgid "Amount payable"
+msgstr "Cantidad pagable"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_ant_current_interest
+msgid "Anticipated current interest"
+msgstr "Interés actual anticipado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_run_type_application
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_type_application
+msgid "Application"
+msgstr "Aplicación"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.overtime.structure,state:0
+msgid "Applied"
+msgstr "Aplicado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_structure_form
+msgid "Apply Overtime Structure"
+msgstr "Aplicar estructura de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_overtime_required
+msgid "Apply all employees"
+msgstr "Aplicar a todos los empleados"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_apply_interest
+msgid "Apply interest"
+msgstr "Aplicar interes"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_form
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,state:0 selection:hr.overtime,state:0
+msgid "Approved"
+msgstr "Aprobado-"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_payslip_run_form_txt_inherit_view
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_payslip_view_form_prime_inherit
+msgid "Archivo plano para Bancolombia"
+msgstr "Archivo plano para Bancolombia"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_attendance
+msgid "Attendance"
+msgstr "Asistencias"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime8
+msgid "Ausencias oficiales dominicales o festivas diurnas"
+msgstr "Ausencias oficiales dominicales o festivas diurnas"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime10
+msgid "Ausencias oficiales dominicales o festivas nocturnas"
+msgstr "Ausencias oficiales dominicales o festivas nocturnas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_balance_amount
+msgid "Balance of the amount"
+msgstr "Balance del monto"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_begin_after
+msgid "Begin After"
+msgstr "Comience después"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,type_payments:0
+msgid "Biweekly"
+msgstr "Quincenal"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Calculate (French)"
+msgstr "Calcular (French)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Calculate (German)"
+msgstr "Calcular (German)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Calculate (Manual)"
+msgstr "Calcular (Manual)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Calculate (Save)"
+msgstr "Calcular (Ahorro)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Calculate (Social)"
+msgstr "Calcular (Social)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_code
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_code
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_code
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_partner_code
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_users_code
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_company_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,calculate_quotas:0
+msgid "Constant quota loan - French system"
+msgstr "Préstamo cuota constante - Sistema frances"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_payroll_socialc
+msgid "Contribución social"
+msgstr "Contribución social"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_control_overtime_val
+msgid "Control overtime validation"
+msgstr "Validación de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_name
+msgid "Correlative"
+msgstr "Correlativo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_create_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_create_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_create_date
+msgid "Created on"
+msgstr "Creado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_acreedor_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_acreedor_id
+msgid "Creditor"
+msgstr "Acreedor"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_partner_acreedor_form
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_loan_acreedores
+msgid "Creditors"
+msgstr "Acreedores"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_payroll_order
+msgid "Créditos"
+msgstr "Créditos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_currency_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_journal_id
+msgid "Daily"
+msgstr "Diario"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_move_id
+msgid "Daily entry"
+msgstr "Entrada diaria"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_debt_insurance_interest
+msgid "Debt insurance"
+msgstr "Seguro de deuda"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_department_id
+msgid "Department"
+msgstr "Departamento"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_department_ids
+msgid "Department(s)"
+msgstr "Departamento(s)"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_treasury_account_id
+msgid "Destination account"
+msgstr "Cuenta destino"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_display_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_report_hr_overtime_hr_attendance_analysis_display_name
+msgid "Display Name"
+msgstr "Nombre Público"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime7
+msgid "Dominical o festivo nocturno"
+msgstr "Dominical o festivo nocturno"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,state:0 selection:hr.overtime,state:0
+#: selection:hr.overtime.structure,state:0
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_loan_line_ids
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Dues"
+msgstr "Cuotas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_employee
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_employee_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_employee_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_employee_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_employee_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_employee_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_emp_account_id
+msgid "Employee Account"
+msgstr "Cuenta del empleado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Employee prime"
+msgstr "Prima del empleado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,help:l10n_co_hr_payroll.field_hr_loan_emp_salary
+#: model:ir.model.fields,help:l10n_co_hr_payroll.field_hr_social_contribution_line_emp_salary
+msgid "Employee's monthly gross wage."
+msgstr "Salario bruto mensual por empleado."
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_ends_in
+msgid "Ends in"
+msgstr "Termina en"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:317
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_workfeb
+#, python-format
+msgid "February Adjustment"
+msgstr "Ajuste de febrero"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_date_from
+msgid "From"
+msgstr "De"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_from_date
+msgid "From Date"
+msgstr "Desde la fecha"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "Generar nóminas para todos los empleados seleccionados"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_contract_is_prime
+msgid "Got prime?"
+msgstr "Tiene prima?"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_attendance_reporting
+msgid "HR  Attendance Report Wizard"
+msgstr "Asistente de informe de asistencia de recursos humanos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_loan
+msgid "HR Loan Request"
+msgstr "Solicitud de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_loan_line
+msgid "HR Loan Request Line"
+msgstr "Lineas de solicitud de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_overtime
+msgid "HR Overtime"
+msgstr "Horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_category_overtime
+msgid "Horas extras"
+msgstr "Horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime9
+msgid "Horas extras ausencias oficiales dominicales o festivas diurnas"
+msgstr "Horas extras ausencias oficiales dominicales o festivas diurnas"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime
+msgid "Horas extras dias laborales diurno"
+msgstr "Horas extras dias laborales diurno"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime2
+msgid "Horas extras dias laborales nocturno"
+msgstr "Horas extras dias laborales nocturno"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime5
+msgid "Horas extras dominicales o festivas diurnas"
+msgstr "Horas extras dominicales o festivas diurnas"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime6
+msgid "Horas extras dominicales o festivas nocturnas"
+msgstr "Horas extras dominicales o festivas nocturnas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_report_hr_overtime_hr_attendance_analysis_id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.payslip,type_application:0
+#: selection:hr.payslip.run,type_application:0
+msgid "Immediate"
+msgstr "Inmediato"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_payslip_view_form_prime_inherit
+msgid "Import from Timesheets"
+msgstr "Importado de parte de horas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_worked_days_imported_from_timesheet
+msgid "Imported From Timesheet"
+msgstr "Importado de parte de horas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_social_contribution_form
+msgid "Inactivate"
+msgstr "Inactivar"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.social.contribution,state:0
+msgid "Inactive"
+msgstr "Inactivo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_payment_start_date
+msgid "Initial date"
+msgstr "Fecha inicial"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_interest_amount
+msgid "Interest"
+msgstr "Interes"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_partner_acreedor
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_users_acreedor
+msgid "Is a creditor?"
+msgstr "Es entidad crediticia?"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_account_move_line
+msgid "Journal Item"
+msgstr "Apunte contable"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line___last_update
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_report_hr_overtime_hr_attendance_analysis___last_update
+msgid "Last Modified on"
+msgstr "Última Modificación el"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_write_uid
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_write_uid
+msgid "Last Updated by"
+msgstr "Actualizado por"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_write_date
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_write_date
+msgid "Last Updated on"
+msgstr "Actualizado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_last_month
+msgid "Last registry"
+msgstr "Ultimo registro"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_payslip_view_form_prime_inherit
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.tree_hr_loan_view
+msgid "Libranzas"
+msgstr "Libranzas"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,type_loan:0
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_account_move_line_loan_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_loan_amount
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_total_loan
+msgid "Loan"
+msgstr "Préstamo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Loan Line"
+msgstr "Linea de préstamo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Loan Request"
+msgstr "Solicitud de préstamo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_hr_loan_request
+msgid "Loan Requests"
+msgstr "Solicitud de préstamos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_loan_amount_charges
+msgid "Loan with charges"
+msgstr "Préstamo con cargos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_loan_ids
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_loan_ids
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Loans"
+msgstr "Préstamos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.act_hr_loan_request
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_base_hr_loan_request
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_loan_request
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_payslip_view_form_prime_inherit
+msgid "Loans and Libranzas"
+msgstr "Préstamos y libranzas"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,calculate_quotas:0
+msgid "Manual"
+msgstr "Manual"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_max_per_day
+msgid "Max. hour per day"
+msgstr "Max.de horas por dia"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.payslip,type_application:0
+#: selection:hr.payslip.run,type_application:0
+msgid "Medium"
+msgstr "Medio"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_month_name
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_no_month
+msgid "Month"
+msgstr "Mes"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,type_payments:0
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_emp_salary
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_emp_salary
+msgid "Monthly salary"
+msgstr "Salario mensual"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.payslip,type_application:0
+#: selection:hr.payslip.run,type_application:0
+msgid "Night"
+msgstr "Noche"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_loan_old_amount
+msgid "Not payed"
+msgstr "No pagado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_notes
+msgid "Notes"
+msgstr "Notas"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,type_loan:0
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_total_order
+msgid "Order"
+msgstr "Crédito"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_others_loan_amount
+msgid "Others amounts"
+msgstr "Otros montos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_outstanding_capital
+msgid "Outstanding capital"
+msgstr "Capital"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.overtime_calendar_view
+msgid "Overtime Calendar"
+msgstr "Calendario de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_overtime_method
+msgid "Overtime Method"
+msgstr "Método de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_reason
+msgid "Overtime Reason"
+msgstr "Razón de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_form
+msgid "Overtime Request"
+msgstr "Solicitud de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_hr_overtime
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_overtime_request
+msgid "Overtime Requests"
+msgstr "Solicitudes de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_structure_form
+msgid "Overtime Rules"
+msgstr "Reglas de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_overtime_structure
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_contract_overtime_structure_id
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.tree_hr_overtime_request_view
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.tree_hr_overtime_structure_view
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_structure_form
+msgid "Overtime Structure"
+msgstr "Estructura de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_hr_ov_structure_rule_ids
+msgid "Overtime Structure Line"
+msgstr "Lineas de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_hr_overtime_structure_id
+msgid "Overtime Structure Ref."
+msgstr "Ref. de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_ov_structure_rule
+msgid "Overtime Structure Rule"
+msgstr "Regla de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_ov_structure_rule_type
+msgid "Overtime Structure Rule type"
+msgstr "Tipo de regla de la hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_ov_structure_rule_type_detail
+msgid "Overtime Structure Rule type detail"
+msgstr "Detalle de la regla en las estructura de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_hr_overtime_structure
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_overtime_structure
+msgid "Overtime Structures"
+msgstr "Estructuras de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_hr_overtime_type
+msgid "Overtime Types"
+msgstr "Tipos de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.action_hr_overtime_type_detail
+msgid "Overtime Types Detail"
+msgstr "Detalle del tipo de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:150
+#, python-format
+msgid "Overtime structure is not defined for the employee %s on this %s contract."
+msgstr "La estructura de las horas extras no esta definido para el empleado %s en este %s contrato."
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_overtime_structure_type_id
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_ov_structure_rule_type_form
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_ov_structure_rule_type_view
+msgid "Overtime type"
+msgstr "Tipo de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_ov_structure_rule_type__detail_form
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_ov_structure_rule_type_detail_view
+msgid "Overtime type detail"
+msgstr "Detalle del tipo de hora extra"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_overtime_types
+msgid "Overtime types"
+msgstr "Tipos de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_overtime_types_details
+msgid "Overtime types details"
+msgstr "Detalle de los tipos de horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_overtime
+msgid "Overtimes"
+msgstr "Horas extras"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_payroll_rules_prima
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_category_prima
+msgid "PRIMA"
+msgstr "PRIMA"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_paid
+msgid "Paid out"
+msgstr "Pagado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_social_contribution_ids
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_social_contribution_form
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Pay Amount"
+msgstr "Pagar monto"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_paid_date
+msgid "Payment date"
+msgstr "Fecha de pago"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_payroll_id
+msgid "Payroll Ref."
+msgstr "Ref. nomina"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Procesamientos de nóminas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr "Días trabajados de la nómina"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_interest
+msgid "Percentage interest"
+msgstr "Porcentaje de interes"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_partner_percentage_social_contribution
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_users_percentage_social_contribution
+msgid "Percentage social contribution"
+msgstr "Porcentaje de contribución social"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_period
+msgid "Period"
+msgstr "Periodo"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:403
+#, python-format
+msgid "Please add a salary (contract) for the employee: %s."
+msgstr "Por favor, agregue un salario (contrato) para el empleado: %s."
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:398
+#, python-format
+msgid "Please add a working hours (contract) for the employee: %s."
+msgstr "Por favor, agregue horario laboral (contrato) para el empleado: %s."
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:407
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:514
+#, python-format
+msgid "Please add bank account for the employee: %s."
+msgstr "Por favor, agregue una cuenta bancaria para el empleado: %s."
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:411
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:520
+#, python-format
+msgid "Please add bank account for your company."
+msgstr "Por favor agregue una cuenta bancaria para su compañía."
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:413
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:524
+#, python-format
+msgid "Please add registry for your company."
+msgstr "Por favor agregue registro para su compañía."
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_prime
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_prime
+msgid "Prime"
+msgstr "Prima"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_payroll_loan
+msgid "Préstamos"
+msgstr "Préstamos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_quotas_amount_manual
+msgid "Quotas"
+msgstr "Cuotas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_calculate_quotas
+msgid "Quotas calculation"
+msgstr "Calculo de cuotas"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_rate
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_worked_days_rate
+msgid "Rate (%)"
+msgstr "Tasa (%)"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime4
+msgid "Recargo dominical o festivo"
+msgstr "Recargo dominical o festivo"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_rule_overtime3
+msgid "Recargo nocturno"
+msgstr "Recargo nocturno"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Recompute Balance"
+msgstr "Recalcular balance"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_line_loan_id
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_social_contribution_id
+msgid "Ref. Of the loan"
+msgstr "Ref. del préstamo"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,state:0
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_attandance_report_id
+msgid "Report Name"
+msgstr "Nombre del informe"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_rule_amount
+msgid "Rule amount"
+msgstr "Monto de la regla"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_rule_name
+msgid "Rule name"
+msgstr "Nombre de la regla"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_salary_hour
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_salary_hour
+msgid "Salary Hour"
+msgstr "Hora/Salario"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_contract_wage_type
+msgid "Salary Type"
+msgstr "Tipo de salario"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_total_savefunds
+msgid "Save funds"
+msgstr "Ahorris"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,type_loan:0
+msgid "Saving funds"
+msgstr "Ahorros"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_loan_form
+msgid "Send to draft"
+msgstr "Enviar a borrador"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_form
+msgid "Set To Draft"
+msgstr "Establecer en borrador"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.actions.act_window,name:l10n_co_hr_payroll.act_hr_social_contribution
+#: model:ir.ui.menu,name:l10n_co_hr_payroll.menu_hr_social_contribution
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.tree_hr_social_contribution_view
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_social_contribution_form
+msgid "Social Contribution"
+msgstr "Contribución social"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_total_socialc
+msgid "Social contributions"
+msgstr "Contribuciones sociales"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:632
+#, python-format
+msgid "Sorry we have exhausted the sequence we could use for this transaction for today try again tomorrow."
+msgstr "Perdón, hemos agotado la secuencia que podríamos usar para esta transacción, intente nuevamente mañana."
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:389
+#, python-format
+msgid "Sorry, but there is no approved Timesheets for the entire Payslip period"
+msgstr "Lo sentimos, pero no hay hojas de horas aprobadas para todo el período de la nomina"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_social_contribution.py:35
+#, python-format
+msgid "Sorry, there is already a social contribution on behalf of this active status"
+msgstr "Lo sentimos, ya hay una contribución social con este nombre en estado activo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_sequence_date
+msgid "Start date"
+msgstr "Fecha inicial"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_state
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_state
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_state
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_state
+msgid "Status"
+msgstr "Estado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_structure_name
+msgid "Structure Name"
+msgstr "Nombre de la estructura"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_form
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.overtime,state:0
+msgid "Submitted"
+msgstr "Submitted"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_parent_id
+msgid "Supervisor"
+msgstr "Supervisor"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_run_txtfile
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_txtfile
+msgid "TXT"
+msgstr "TXT"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_run_txtfile_filename
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_txtfile_filename
+msgid "TXT Filename"
+msgstr "TXT Filename"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_run_txtbool
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_txtbool
+msgid "TXT Validator"
+msgstr "TXT Validator"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_payslip_worked_days_timesheet_sheet_id
+msgid "Timesheet"
+msgstr "Parte de hora"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:351
+#, python-format
+msgid "Timesheet %s"
+msgstr "Parte de horas %s"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_attendance_reporting_date_to
+msgid "To"
+msgstr "A"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_to_date
+msgid "To Date"
+msgstr "Hasta la Fecha"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_all
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_total_amount
+msgid "Total"
+msgstr "Total"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_eps
+msgid "Total EPS"
+msgstr "Total EPS"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_total_paid_amount
+msgid "Total Paid"
+msgstr "Total pagado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_social_contribution_line_social_contribution
+msgid "Total Social contribution"
+msgstr "Total contribución social"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_total_time
+msgid "Total Time (Hours)"
+msgstr "Tiempo total (Horas)"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_payroll_rules_savef
+msgid "Total ahorros"
+msgstr "Total ahorros"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_atrans
+msgid "Total ayuda transporte"
+msgstr "Total ayuda transporte"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_basic
+msgid "Total basic"
+msgstr "Total basico"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_payroll_rules_socialc
+msgid "Total contribución social"
+msgstr "Total contribución social"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_payroll_rules_order
+msgid "Total créditos"
+msgstr "Total créditos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_fsolidaridad
+msgid "Total fondo solidaridad"
+msgstr "Total fondo solidaridad"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_gross
+msgid "Total gross"
+msgstr "Total acumulado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_loans
+msgid "Total loans"
+msgstr "Total préstamos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_orders
+msgid "Total orders"
+msgstr "Total créditos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_pension
+msgid "Total pensión"
+msgstr "Total pensión"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule,name:l10n_co_hr_payroll.hr_payroll_rules_loan
+msgid "Total préstamos"
+msgstr "Total préstamos"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_sfunds
+msgid "Total save funds"
+msgstr "Total ahorros"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_total_svida
+msgid "Total seguro de vida"
+msgstr "Total seguro de vida"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Totals for the employee"
+msgstr "Totales para el empleado"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_type_loan
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_id_8479
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_type_id
+msgid "Type"
+msgstr "Tipo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_name
+msgid "Type Name"
+msgstr "Nombre del tipo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_id_8480
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_overtime_type_detail_id
+msgid "Type detail"
+msgstr "Detalle del tipo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_ov_structure_rule_type_detail_name
+msgid "Type detail name"
+msgstr "Nombre del tipo"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_type_payments
+msgid "Type payments"
+msgstr "Tipos de pagos"
+
+#. module: l10n_co_hr_payroll
+#: selection:hr.loan,calculate_quotas:0
+msgid "Variable quota loan - German system"
+msgstr "Cuota variable - Sistema alemán"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_wage
+msgid "Wage"
+msgstr "Salario"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_loan_job_id
+msgid "Work position"
+msgstr "Posición laboral"
+
+#. module: l10n_co_hr_payroll
+#: model:hr.salary.rule.category,name:l10n_co_hr_payroll.hr_category_workfeb
+msgid "WorkFeb"
+msgstr "WorkFeb"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:140
+#, python-format
+msgid "Working Schedule is not defined on this %s contract. %s."
+msgstr "El horario de trabajo no está definido en este %s contrato. %s"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_acumulated_year_name
+msgid "Year"
+msgstr "Año"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_hr_employee_year_filter
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Year Filter"
+msgstr "Filtro por año"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.hr_employee_form_acumulated
+msgid "Year filter"
+msgstr "Filtro por año"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_overtime.py:152
+#, python-format
+msgid "You can not select a lower end date than the start date"
+msgstr "No puede seleccionar una fecha de finalización inferior a la fecha de inicio"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_overtime.py:110
+#: code:addons/l10n_co_hr_payroll/models/hr_overtime.py:156
+#, python-format
+msgid "You can only select one specific day"
+msgstr "Solo puedes seleccionar un día específico"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_payslip.py:192
+#, python-format
+msgid "You need to define overtime rules for %s"
+msgstr "Necesita definir reglas de horas extras para %s"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:70
+#, python-format
+msgid "annually"
+msgstr "Anual"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:67
+#, python-format
+msgid "bimonthly"
+msgstr "Bimensual"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:65
+#, python-format
+msgid "biweekly"
+msgstr "Quincenal"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_payslip_sequence
+msgid "hr payslip sequence "
+msgstr "hr payslip sequence "
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_social_contribution
+msgid "hr.social.contribution"
+msgstr "hr.social.contribution"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_hr_social_contribution_line
+msgid "hr.social.contribution.line"
+msgstr "hr.social.contribution.line"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:66
+#, python-format
+msgid "monthly"
+msgstr "Mensual"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.ui.view,arch_db:l10n_co_hr_payroll.view_hr_overtime_structure_form
+msgid "ov/dev"
+msgstr "HE/dev"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:68
+#, python-format
+msgid "quarterly"
+msgstr "Trimestral"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model,name:l10n_co_hr_payroll.model_report_hr_overtime_hr_attendance_analysis
+msgid "report.hr_overtime.hr_attendance_analysis"
+msgstr "report.hr_overtime.hr_attendance_analysis"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:69
+#, python-format
+msgid "semi-annually"
+msgstr "semi-anual"
+
+#. module: l10n_co_hr_payroll
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_partner_top_social_contribution
+#: model:ir.model.fields,field_description:l10n_co_hr_payroll.field_res_users_top_social_contribution
+msgid "top social contribution"
+msgstr "Contribución social"
+
+#. module: l10n_co_hr_payroll
+#: code:addons/l10n_co_hr_payroll/models/hr_contract.py:64
+#, python-format
+msgid "weekly"
+msgstr "Semanal"

@@ -1,0 +1,69 @@
+<odoo>
+  <data>
+      
+    <!-- academic tree-->
+    <record model="ir.ui.view" id="view_academic_tree">
+        <field name="name">hr.academic.tree</field>
+        <field name="model">hr.academic</field>
+        <field name="arch" type="xml">
+            <tree string="Academic experiences">
+                <field name="name" string="Education"/>
+                <field name="employee_id"/>
+                <field name="partner_id" string="Institution"/>
+                <field name="diploma"/>
+                <field name="study_field"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+     <!-- academic form-->
+    <record model="ir.ui.view" id="view_academic_form">
+        <field name="name">hr.academic.form</field>
+        <field name="model">hr.academic</field>
+        <field name="arch" type="xml">
+            <form string="Academic experience">
+                <sheet>
+                    <group>
+                        <group string="Basic information">
+                            <field name="employee_id"/>
+                            <field name="name"/>
+                        </group>
+                        <group string="Dates">
+                            <field name="start_date"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group string="Partner">
+                            <field name="partner_id"/>
+                            <field name="location"/>
+                        </group>
+                        <group string="Academic Information">
+                            <field name="diploma"/>
+                            <field name="study_field"/>
+                            <field name="activities"/>
+                        </group>
+                    </group>
+                    <separator string="Additional Information"/>
+                    <field name="description"  nolabel="1"/>
+                </sheet>
+            </form>
+      </field>
+    </record>
+
+    <!-- Menu -->
+    <record model="ir.actions.act_window" id="open_view_academic_form">
+        <field name="name">Academic experiences</field>
+        <field name="res_model">hr.academic</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    
+    <menuitem name="Academic Experiences"
+              parent="menu_hr_experience"
+              id="menu_open_view_academic_form"
+              action="open_view_academic_form"/>
+
+  </data>
+</odoo>

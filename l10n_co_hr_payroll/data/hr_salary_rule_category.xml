@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="hr_category_prima" model="hr.salary.rule.category">
+		<field name="name">PRIMA</field>
+		<field name="code">PR</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+	</record>
+
+    <record id="hr_category_overtime" model="hr.salary.rule.category">
+        <field name="name">Horas extras</field>
+        <field name="code">OT</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+    <record id="hr_payroll_order" model="hr.salary.rule.category">
+        <field name="name">Créditos</field>
+        <field name="code">Créditos</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_loan" model="hr.salary.rule.category">
+        <field name="name">Préstamos</field>
+        <field name="code">Préstamos</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_savef" model="hr.salary.rule.category">
+        <field name="name">Ahorros</field>
+        <field name="code">Ahorros</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_socialc" model="hr.salary.rule.category">
+        <field name="name">Contribución social</field>
+        <field name="code">Contribución social</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_eps" model="hr.salary.rule.category">
+        <field name="name">EPS</field>
+        <field name="code">EPS</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_pension" model="hr.salary.rule.category">
+        <field name="name">Pension</field>
+        <field name="code">PNSN</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_fsolidaridad" model="hr.salary.rule.category">
+        <field name="name">Fondo de solidaridad</field>
+        <field name="code">FNDDSLDRDD</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_svida" model="hr.salary.rule.category">
+        <field name="name">Seguro de vida</field>
+        <field name="code">SVIDA</field>
+        <field name="parent_id" ref="hr_payroll.DED"/>
+    </record>
+
+    <record id="hr_payroll_transporte" model="hr.salary.rule.category">
+        <field name="name">Auxilio de transporte</field>
+        <field name="code">AUXTRANS</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+    <record id="hr_payroll_enfermedad" model="hr.salary.rule.category">
+        <field name="name">Enfermedad General</field>
+        <field name="code">ENFER</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+    <record id="hr_payroll_enfermedad_g" model="hr.salary.rule.category">
+        <field name="name">Enfermedad General</field>
+        <field name="code">ENFERG</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+    <record id="hr_payroll_enfermedad_p" model="hr.salary.rule.category">
+        <field name="name">Enfermedad profesional</field>
+        <field name="code">ENFERP</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+    <record id="hr_payroll_hextras" model="hr.salary.rule.category">
+        <field name="name">Horas extras</field>
+        <field name="code">HEXTRAS</field>
+        <field name="parent_id" ref="hr_payroll.ALW"/>
+    </record>
+
+</odoo>
