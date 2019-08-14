@@ -1,21 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# 	* l10n_co_topology
+#	* l10n_co_topology
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 11.0+e-20181004\n"
+"Project-Id-Version: Odoo Server 12.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-01 21:33+0000\n"
-"PO-Revision-Date: 2018-11-01 16:36-0500\n"
+"POT-Creation-Date: 2019-08-13 20:06+0000\n"
+"PO-Revision-Date: 2019-08-13 20:06+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-"Language: es_CO\n"
-"X-Generator: Poedit 2.2\n"
 
 #. module: l10n_co_topology
 #: model:res.country.sector,name:l10n_co_topology.sector91
@@ -28,9 +26,9 @@ msgid "Av. Ferrocarril"
 msgstr "Av. Ferrocarril"
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Barrio"
 msgstr "Barrio"
 
@@ -70,12 +68,12 @@ msgid "Centro"
 msgstr "Centro"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_child_ids
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__child_ids
 msgid "Children"
 msgstr "Hijos"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_code
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__code
 msgid "Code"
 msgstr "Código"
 
@@ -90,55 +88,60 @@ msgid "Copacabana"
 msgstr "Copacabana"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_country_id
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__country_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner__country_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users__country_id
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Country"
 msgstr "País"
 
 #. module: l10n_co_topology
 #: model:ir.model,name:l10n_co_topology.model_res_country_sector
 msgid "Country Sector"
-msgstr "Sector"
+msgstr "Sector del pais"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_create_uid
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_create_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__create_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__create_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__create_uid
 msgid "Created by"
 msgstr "Creado por"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_create_date
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_create_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__create_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__create_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__create_date
 msgid "Created on"
 msgstr "Creado"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_delivery_carrier_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__delivery_carrier_id
 msgid "Delivery Carrier"
-msgstr "Transportista"
+msgstr "Transportista de entrega"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,help:l10n_co_topology.field_res_country_municipality_sequence
+#: model:ir.model.fields,help:l10n_co_topology.field_res_country_municipality__sequence
 msgid "Determine the display order"
-msgstr "Determinar el orden de visualización"
+msgstr "Determina el orden de visualización"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_display_name
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_display_name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__display_name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__display_name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__display_name
 msgid "Display Name"
-msgstr "Nombre Público"
+msgstr "Nombre a mostrar"
 
 #. module: l10n_co_topology
-#: model:ir.actions.act_window,help:l10n_co_topology.res_country_municipality_action
+#: model_terms:ir.actions.act_window,help:l10n_co_topology.res_country_municipality_action
 msgid "Display and manage the list of all municipalities that can be assigned to your partner records. You can create or delete municipalities to make sure the ones you are working on will be maintained."
-msgstr "Display and manage the list of all municipalities that can be assigned to your partner records. You can create or delete municipalities to make sure the ones you are working on will be maintained."
+msgstr "Visualice y administre la lista de todos los municipios que pueden asignarse a sus registros de socios. Puede crear o eliminar municipios para asegurarse de que se mantengan los que está trabajando."
 
 #. module: l10n_co_topology
-#: model:ir.actions.act_window,help:l10n_co_topology.res_country_sector_action
+#: model_terms:ir.actions.act_window,help:l10n_co_topology.res_country_sector_action
 msgid "Display and manage the list of all sectors that can be assigned to your partner records. You can create or delete sectors to make sure the ones you are working on will be maintained."
-msgstr "Display and manage the list of all sectors that can be assigned to your partner records. You can create or delete sectors to make sure the ones you are working on will be maintained."
+msgstr "Visualice y administre la lista de todos los sectores que se pueden asignar a sus registros de socios. Puede crear o eliminar sectores para asegurarse de que se mantengan los que está trabajando."
 
 #. module: l10n_co_topology
 #: model:res.country.sector,name:l10n_co_topology.sector41
@@ -149,7 +152,7 @@ msgstr "Envigado"
 #: code:addons/l10n_co_topology/models/res_country_sector.py:65
 #, python-format
 msgid "Error! You cannot create recursive sectors."
-msgstr "No se pueden crear sectores recursivos!"
+msgstr "¡Error! No se pueden crear sectores recursivos."
 
 #. module: l10n_co_topology
 #: model:res.country.sector,name:l10n_co_topology.sector101
@@ -182,8 +185,9 @@ msgid "Guayabal"
 msgstr "Guayabal"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_id
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__id
 msgid "ID"
 msgstr "ID"
 
@@ -193,20 +197,23 @@ msgid "Itaguí"
 msgstr "Itaguí"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality___last_update
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector___last_update
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality____last_update
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector____last_update
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days____last_update
 msgid "Last Modified on"
 msgstr "Última Modificación el"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_write_uid
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_write_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__write_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__write_uid
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__write_uid
 msgid "Last Updated by"
 msgstr "Actualizado por"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_write_date
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_write_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__write_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__write_date
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__write_date
 msgid "Last Updated on"
 msgstr "Actualizado"
 
@@ -216,8 +223,8 @@ msgid "Laureles"
 msgstr "Laureles"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner_sector_id
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users_sector_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner__sector_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users__sector_id
 msgid "Main Sector"
 msgstr "Sector principal"
 
@@ -239,19 +246,20 @@ msgstr "Municipios"
 
 #. module: l10n_co_topology
 #: model:ir.model,name:l10n_co_topology.model_res_country_municipality
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner_municipality_id
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users_municipality_id
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_country_municipality_form_view
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_country_municipality_tree_view
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner__municipality_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users__municipality_id
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_country_municipality_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_country_municipality_tree_view
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Municipality"
 msgstr "Municipio"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_name
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__name
+#: model:ir.model.fields,field_description:l10n_co_topology.field_week_days__name
 msgid "Name"
 msgstr "Nombre"
 
@@ -266,7 +274,7 @@ msgid "Otro departamento"
 msgstr "Otro departamento"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_parent_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__parent_id
 msgid "Parent"
 msgstr "Padre"
 
@@ -311,23 +319,23 @@ msgid "Saturday"
 msgstr "Sábado"
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Secondary Sector"
 msgstr "Sector secundario"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner_secondary_sector_ids
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users_secondary_sector_ids
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_partner__secondary_sector_ids
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_users__secondary_sector_ids
 msgid "Secondary Sectors"
-msgstr "Sectores secundarios"
+msgstr "Sectores Secundarios"
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_country_sector_form_view
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_country_sector_form_view
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Sector"
 msgstr "Sector"
 
@@ -424,35 +432,35 @@ msgstr "Sector 9"
 #. module: l10n_co_topology
 #: model:ir.actions.act_window,name:l10n_co_topology.res_country_sector_action
 #: model:ir.ui.menu,name:l10n_co_topology.menu_res_country_sector
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_country_sector_tree_view
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_country_sector_tree_view
 msgid "Sectors"
-msgstr "Sectors"
+msgstr "Sectores"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_sequence
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__sequence
 msgid "Sequence"
 msgstr "Secuencia"
 
 #. module: l10n_co_topology
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality_state_id
-#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector_state_id
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_municipality__state_id
+#: model:ir.model.fields,field_description:l10n_co_topology.field_res_country_sector__state_id
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "State"
 msgstr "Estado"
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Street 2..."
 msgstr "Calle 2..."
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "Street..."
 msgstr "Calle..."
 
@@ -479,12 +487,12 @@ msgstr "Villa Hermosa"
 #. module: l10n_co_topology
 #: model:week.days,name:l10n_co_topology.d3
 msgid "Wednesday"
-msgstr "Miercoles"
+msgstr "Miércoles"
 
 #. module: l10n_co_topology
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
-#: model:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_address_inherit
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_form_inherit1
+#: model_terms:ir.ui.view,arch_db:l10n_co_topology.res_partner_short_inherit
 msgid "ZIP"
 msgstr "C.P."
 

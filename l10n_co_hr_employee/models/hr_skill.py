@@ -23,8 +23,6 @@ from odoo import models, fields, api
 
 class Skill(models.Model):
     _name = 'hr.skill'
-    _parent_store = True
-    _order = 'parent_left'
 
     name = fields.Char(
         'Name', required=True, translate=True)

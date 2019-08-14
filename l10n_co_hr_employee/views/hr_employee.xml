@@ -14,7 +14,7 @@
             <button name="toggle_active" position="before">
                  <button type="object"  name="action_view_survey_user_input"
                             class="oe_stat_button"
-                            icon="fa fa-list-ol">
+                            icon="fa-list-alt">
                             <field name="survey_count" widget="statinfo" string="Surveys"/>
                             <field name='survey_ids' invisible="1"/>
                         </button>
