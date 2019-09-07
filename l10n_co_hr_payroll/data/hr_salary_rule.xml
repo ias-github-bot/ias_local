@@ -249,32 +249,6 @@
         <field name="sequence" eval="123"/>
     </record>
 
-    <record id="hr_payroll_rules_enfermedad_general" model="hr.salary.rule">
-        <field name="condition_select">python</field>
-        <field name="condition_python">result = payslip.general_disease</field>
-        <field name="amount_select">percentage</field>
-        <field eval="125" name="sequence"/>
-        <field eval="66.67" name="amount_percentage"/>
-        <field name="amount_percentage_base">payslip.salary_hour*worked_days.GenDisease.number_of_hours</field>
-        <field name="code">GD</field>
-        <field name="category_id" ref="hr_payroll.ALW"/>
-        <field name="register_id" ref="l10n_co_hr_payroll.hr_enfermedad_g"/>
-        <field name="name">Enfermedad general</field>
-    </record>
-
-    <record id="hr_payroll_rules_enfermedad_profesional" model="hr.salary.rule">
-        <field name="condition_select">python</field>
-        <field name="condition_python">result = payslip.professional_disease</field>
-        <field name="amount_select">percentage</field>
-        <field eval="126" name="sequence"/>
-        <field eval="100" name="amount_percentage"/>
-        <field name="amount_percentage_base">payslip.salary_hour*worked_days.ProDisease.number_of_hours</field>
-        <field name="code">PD</field>
-        <field name="category_id" ref="hr_payroll.ALW"/>
-        <field name="register_id" ref="l10n_co_hr_payroll.hr_enfermedad_p"/>
-        <field name="name">Enfermedad ocupacional</field>
-    </record>
-
     <record id="hr_payroll_rules_transporte" model="hr.salary.rule">
         <field name="condition_select">python</field>
         <field name="condition_python">result = (contract.wage &lt;= (737717 * 2)) and (contract.stage != 'elective')</field>

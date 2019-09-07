@@ -17,7 +17,6 @@
     'description': """HR Holidays Localization Colombia""",
     'data': [
         'views/hr_holidays_view.xml',
-        'views/hr_payslip_view.xml',
     ],
     'external_dependencies': {
         'python': [

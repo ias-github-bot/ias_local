@@ -236,27 +236,27 @@ class HrPayslip(models.Model):
                 total_savefunds += l_s[0].paid_amount
                 array_save.append(l_s[0].id)
         # Social contributions
-        socialc_ids = self.env[
-            'hr.social.contribution'].search(
-                [('state', '=', 'active')])
-        if socialc_ids:
-            for social in socialc_ids.social_contribution_ids:
-
-                if social.employee_id.id == self.employee_id.id:
-                    date_from = datetime.strptime(str(self.date_from + ' 00:00'), '%Y-%m-%d %H:%M')
-                    date_to = datetime.strptime(str(self.date_to + ' 00:00'), '%Y-%m-%d %H:%M')
-                    res = (date_to - date_from).days - 1
-                    if res < 17:
-                        total_socialc += social.social_contribution / 2
-                    else:
-                        total_socialc += social.social_contribution
-
-        loan_data = array_order + array_loan + array_save + array_savec
-        self.total_order = total_order
-        self.total_loan = total_loan
-        self.total_savefunds = total_savefunds
-        self.total_socialc = total_socialc
-        self.loan_ids = loan_data
+        # socialc_ids = self.env[
+        #     'hr.social.contribution'].search(
+        #         [('state', '=', 'active')])
+        # if socialc_ids:
+        #     for social in socialc_ids.social_contribution_ids:
+        #
+        #         if social.employee_id.id == self.employee_id.id:
+        #             date_from = datetime.strptime(str(self.date_from + ' 00:00'), '%Y-%m-%d %H:%M')
+        #             date_to = datetime.strptime(str(self.date_to + ' 00:00'), '%Y-%m-%d %H:%M')
+        #             res = (date_to - date_from).days - 1
+        #             if res < 17:
+        #                 total_socialc += social.social_contribution / 2
+        #             else:
+        #                 total_socialc += social.social_contribution
+        #
+        # loan_data = array_order + array_loan + array_save + array_savec
+        # self.total_order = total_order
+        # self.total_loan = total_loan
+        # self.total_savefunds = total_savefunds
+        # self.total_socialc = total_socialc
+        # self.loan_ids = loan_data
 
     @api.depends('employee_id', 'contract_id', 'date_from', 'date_to')
     def _get_salary_hour(self):

@@ -103,7 +103,7 @@ class ParticularReport(models.AbstractModel):
 
 		def _get_leave(docs,date):
 			leave_name =" "
-			leave_obj = self.pool.get('hr.holidays')
+			leave_obj = self.pool.get('hr.leave')
 			for object in docs:
 				employee_id = object.employee_id.id
 				break
@@ -179,9 +179,9 @@ class ParticularReport(models.AbstractModel):
 							('employee_id','=',object.employee_id.id),
 							('holiday_status_id','=',holiday_status_id)
 						]
-						leave_ids = self.pool.get('hr.holidays').search(cr, uid, domain, context=context)
+						leave_ids = self.pool.get('hr.leave').search(cr, uid, domain, context=context)
 						Flage = False
-						for leave in self.pool.get('hr.holidays').browse(cr, uid, leave_ids, context=context):
+						for leave in self.pool.get('hr.leave').browse(cr, uid, leave_ids, context=context):
 							to_dt= datetime.strptime(leave.date_to, "%Y-%m-%d %H:%M:%S").date()
 							from_dt= datetime.strptime(leave.date_from, "%Y-%m-%d %H:%M:%S").date()
 							for n in range(((to_dt+timedelta(days=1)) - from_dt).days):

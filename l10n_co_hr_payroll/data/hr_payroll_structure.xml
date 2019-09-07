@@ -6,7 +6,17 @@
     <record id="structure_base" model="hr.payroll.structure">
         <field name="code">EG001</field>
         <field name="name">Estructura General Colombia</field>
-        <field eval="[(6, 0, [ref('l10n_co_hr_payroll.hr_rule_basic2'), ref('l10n_co_hr_payroll.hr_rule_taxable2'), ref('l10n_co_hr_payroll.hr_payroll_rules_enfermedad_general'), ref('l10n_co_hr_payroll.hr_payroll_rules_enfermedad_profesional'), ref('l10n_co_hr_payroll.hr_payroll_eps_rule'), ref('l10n_co_hr_payroll.hr_payroll_pension_rule'), ref('l10n_co_hr_payroll.hr_payroll_rules_fsolidaridad'), ref('l10n_co_hr_payroll.hr_payroll_rules_transporte'), ref('l10n_co_hr_payroll.hr_payroll_rules_svida'), ref('l10n_co_hr_payroll.hr_payroll_rules_order'), ref('l10n_co_hr_payroll.hr_payroll_rules_loan'), ref('l10n_co_hr_payroll.hr_payroll_rules_savef'), ref('l10n_co_hr_payroll.hr_payroll_rules_socialc'),
+        <field eval="[(6, 0, [ref('l10n_co_hr_payroll.hr_rule_basic2'),
+        ref('l10n_co_hr_payroll.hr_rule_taxable2'),
+        ref('l10n_co_hr_payroll.hr_payroll_eps_rule'),
+        ref('l10n_co_hr_payroll.hr_payroll_pension_rule'),
+        ref('l10n_co_hr_payroll.hr_payroll_rules_fsolidaridad'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_transporte'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_svida'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_order'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_loan'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_savef'),
+         ref('l10n_co_hr_payroll.hr_payroll_rules_socialc'),
         ref('l10n_co_hr_payroll.hr_rule_overtime'),
         ref('l10n_co_hr_payroll.hr_rule_overtime2'),
         ref('l10n_co_hr_payroll.hr_rule_overtime3'),

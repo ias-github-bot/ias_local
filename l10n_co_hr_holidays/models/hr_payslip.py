@@ -10,40 +10,15 @@ from workalendar.america import Colombia
 class HrPayslip(models.Model):
     _inherit = 'hr.payslip'
 
-    @api.depends('employee_id', 'date_from', 'date_to')
-    def _compute_diseases_type(self):
-        # Diseases
-        self.general_disease = False
-        self.professional_disease = False
-        diseases_ids = self.env['hr.holidays'].search(
-            [('employee_id', '=', self.employee_id.id),
-             ('state', '=', 'validate'),
-             ('date_from', '<=', self.date_to),
-             ('date_to', '>=', self.date_from),
-             ('holiday_status_type', 'in', ['GD', 'PD']),
-             ('payed', '=', False)])
-        for data in diseases_ids:
-            if data.holiday_status_type:
-                if data.holiday_status_type == 'GD':
-                    self.general_disease = True
-                if data.holiday_status_type == 'PD':
-                    self.professional_disease = True
-
-    general_disease = fields.Boolean(
-        "General disease", compute='_compute_diseases_type', store=True)
-    professional_disease = fields.Boolean(
-        "Professional disease", compute='_compute_diseases_type', store=True)
-
     @api.model
     def action_payslip_done(self):
         result = super(HrPayslip, self).action_payslip_done()
-        holidays_obj = self.env['hr.holidays']
+        holidays_obj = self.env['hr.leave']
         holidays_ids = holidays_obj.search(
             [('employee_id', '=', self.employee_id.id),
              ('payed', '=', False),
              ('date_from', '<=', self.date_to),
-             ('date_to', '>=', self.date_from),
-             ('holiday_status_type', 'in', ['GD', 'PD'])])
+             ('date_to', '>=', self.date_from)])
         for data in holidays_ids:
             if data:
                 if self.date_from <= data.date_from:
@@ -74,12 +49,7 @@ class HrPayslip(models.Model):
             for day_intervals in day_leave_intervals:
                 for interval in day_intervals:
                     holiday = interval[2]['leaves'].holiday_id
-                    if holiday.holiday_status_type == 'GD' and not holiday.payed:
-                        name = 'GenDisease'
-                    elif holiday.holiday_status_type == 'PD' and not holiday.payed:
-                        name = 'ProDisease'
-                    else:
-                        name = holiday.holiday_status_id.name
+                    name = holiday.holiday_status_id.name
                     current_leave_struct = leaves.setdefault(
                         holiday.holiday_status_id, {
                             'name': name,

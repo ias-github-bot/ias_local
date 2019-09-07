@@ -34,7 +34,6 @@
     'category': 'Base Profile',
     'version': '0.1',
     'depends': [
-        'hr_expense',
         # IAS's addons
         'l10n_co_topology',
         # Colombia HR Modules

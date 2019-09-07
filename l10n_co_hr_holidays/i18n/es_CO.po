@@ -21,11 +21,6 @@ msgid "File Name"
 msgstr "Nombre del archivo"
 
 #. module: l10n_co_hr_holidays
-#: model:ir.model.fields,field_description:l10n_co_hr_holidays.field_hr_payslip__general_disease
-msgid "General disease"
-msgstr "Enfermedad general"
-
-#. module: l10n_co_hr_holidays
 #: model:ir.model,name:l10n_co_hr_holidays.model_hr_leave
 msgid "Leave"
 msgstr "Ausencia"
